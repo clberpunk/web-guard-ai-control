@@ -2,7 +2,6 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
-import GlobalStats from "@/components/GlobalStats";
 import HowItWorks from "@/components/HowItWorks";
 import Benefits from "@/components/Benefits";
 import Dashboard from "@/components/Dashboard";
@@ -12,6 +11,9 @@ import Pricing from "@/components/Pricing";
 import CompetitiveComparison from "@/components/CompetitiveComparison";
 import ContactForm from "@/components/ContactForm";
 import TechnicalDocs from "@/components/TechnicalDocs";
+import IndustrySectors from "@/components/IndustrySectors";
+import SecurityPrivacy from "@/components/SecurityPrivacy";
+import GlobalStats from "@/components/GlobalStats";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -22,7 +24,6 @@ const Index = () => {
         <Hero />
       </div>
       <Features />
-      <GlobalStats />
       <HowItWorks />
       <Benefits />
       <Dashboard />
@@ -32,6 +33,9 @@ const Index = () => {
       <CompetitiveComparison />
       <ContactForm />
       <TechnicalDocs />
+      <IndustrySectors />
+      <SecurityPrivacy />
+      <GlobalStats />
       <Footer />
     </div>
   );

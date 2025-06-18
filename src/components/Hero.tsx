@@ -32,10 +32,10 @@ const Hero = () => {
             {/* Main headline */}
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in delay-100">
               <span className="bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
-                Human has rights.
+                People has rights,
               </span>
               <br />
-              <span className="text-white">AI rules.</span>
+              <span className="text-white">AI follow rules.</span>
             </h1>
             
             {/* Subtitle */}
@@ -74,56 +74,56 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* Right column - Dashboard mockup */}
+          {/* Right column - Light Dashboard mockup */}
           <div className="animate-fade-in delay-500">
-            <div className="bg-white/10 backdrop-blur-lg rounded-2xl border border-white/20 overflow-hidden shadow-2xl">
+            <div className="bg-white/95 backdrop-blur-lg rounded-2xl border border-slate-200 overflow-hidden shadow-2xl">
               {/* Dashboard header */}
-              <div className="bg-slate-800/50 px-6 py-4 flex items-center justify-between border-b border-white/10">
+              <div className="bg-slate-50 px-6 py-4 flex items-center justify-between border-b border-slate-200">
                 <div className="flex items-center space-x-4">
-                  <Shield className="h-5 w-5 text-blue-400" />
-                  <span className="text-white font-medium">Control de IAs</span>
+                  <Shield className="h-5 w-5 text-blue-600" />
+                  <span className="text-slate-900 font-medium">Control de IAs</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 rounded-full bg-green-400"></div>
-                  <span className="text-green-400 text-xs">Activo</span>
+                  <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                  <span className="text-green-600 text-xs">Activo</span>
                 </div>
               </div>
               
               {/* Dashboard content */}
-              <div className="p-6 space-y-4">
+              <div className="p-6 space-y-4 bg-white">
                 {/* Stats row */}
                 <div className="grid grid-cols-3 gap-4 mb-6">
-                  <div className="bg-blue-500/20 rounded-lg p-3 text-center">
-                    <Activity className="h-5 w-5 text-blue-400 mx-auto mb-1" />
-                    <div className="text-white font-bold text-lg">147</div>
-                    <div className="text-blue-300 text-xs">IAs Detectadas</div>
+                  <div className="bg-blue-50 rounded-lg p-3 text-center border border-blue-100">
+                    <Activity className="h-5 w-5 text-blue-600 mx-auto mb-1" />
+                    <div className="text-slate-900 font-bold text-lg">147</div>
+                    <div className="text-blue-600 text-xs">IAs Detectadas</div>
                   </div>
-                  <div className="bg-red-500/20 rounded-lg p-3 text-center">
-                    <AlertTriangle className="h-5 w-5 text-red-400 mx-auto mb-1" />
-                    <div className="text-white font-bold text-lg">23</div>
-                    <div className="text-red-300 text-xs">Bloqueadas</div>
+                  <div className="bg-red-50 rounded-lg p-3 text-center border border-red-100">
+                    <AlertTriangle className="h-5 w-5 text-red-600 mx-auto mb-1" />
+                    <div className="text-slate-900 font-bold text-lg">23</div>
+                    <div className="text-red-600 text-xs">Bloqueadas</div>
                   </div>
-                  <div className="bg-green-500/20 rounded-lg p-3 text-center">
-                    <CheckCircle className="h-5 w-5 text-green-400 mx-auto mb-1" />
-                    <div className="text-white font-bold text-lg">124</div>
-                    <div className="text-green-300 text-xs">Permitidas</div>
+                  <div className="bg-green-50 rounded-lg p-3 text-center border border-green-100">
+                    <CheckCircle className="h-5 w-5 text-green-600 mx-auto mb-1" />
+                    <div className="text-slate-900 font-bold text-lg">124</div>
+                    <div className="text-green-600 text-xs">Permitidas</div>
                   </div>
                 </div>
                 
                 {/* AI Activity List */}
                 <div className="space-y-3">
                   {[
-                    { name: "GPT-4", status: "Bloqueada", color: "text-red-400", bg: "bg-red-500/20" },
-                    { name: "Claude AI", status: "Permitida", color: "text-green-400", bg: "bg-green-500/20" },
-                    { name: "Unknown Bot", status: "Revisando", color: "text-amber-400", bg: "bg-amber-500/20" },
-                    { name: "Bard", status: "Limitada", color: "text-blue-400", bg: "bg-blue-500/20" }
+                    { name: "GPT-4", status: "Bloqueada", color: "text-red-600", bg: "bg-red-50", border: "border-red-200" },
+                    { name: "Claude AI", status: "Permitida", color: "text-green-600", bg: "bg-green-50", border: "border-green-200" },
+                    { name: "Unknown Bot", status: "Revisando", color: "text-amber-600", bg: "bg-amber-50", border: "border-amber-200" },
+                    { name: "Bard", status: "Limitada", color: "text-blue-600", bg: "bg-blue-50", border: "border-blue-200" }
                   ].map((ai, index) => (
-                    <div key={index} className="flex items-center justify-between bg-white/5 rounded-lg p-3">
+                    <div key={index} className={`flex items-center justify-between bg-slate-50 rounded-lg p-3 border border-slate-200`}>
                       <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 rounded-full bg-blue-400"></div>
-                        <span className="text-white text-sm font-medium">{ai.name}</span>
+                        <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+                        <span className="text-slate-900 text-sm font-medium">{ai.name}</span>
                       </div>
-                      <span className={`text-xs px-2 py-1 rounded-full ${ai.bg} ${ai.color}`}>
+                      <span className={`text-xs px-2 py-1 rounded-full ${ai.bg} ${ai.color} ${ai.border} border`}>
                         {ai.status}
                       </span>
                     </div>
