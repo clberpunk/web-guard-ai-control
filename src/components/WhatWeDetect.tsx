@@ -38,7 +38,7 @@ const WhatWeDetect = () => {
   const advantages = [
     {
       icon: Zap,
-      title: "Integración "copy‑&‑paste" en 2 minutos",
+      title: 'Integración "copy-&-paste" en 2 minutos',
       color: "text-blue-600",
       bg: "bg-blue-50"
     },
@@ -62,7 +62,7 @@ const WhatWeDetect = () => {
     },
     {
       icon: CheckCircle,
-      title: "Planes freemium y pay‑per‑use flexibles",
+      title: "Planes freemium y pay-per-use flexibles",
       color: "text-green-600",
       bg: "bg-green-50"
     }
