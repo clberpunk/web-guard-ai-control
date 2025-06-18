@@ -71,22 +71,22 @@ const MegaMenuNavigation = () => {
     items: typeof productItems;
     highlightSection: { icon: any; title: string; description: string; color: string; bg: string; }
   }) => (
-    <div className="w-full max-w-6xl mx-auto p-6">
-      <div className="grid grid-cols-3 gap-8">
+    <div className="w-full max-w-7xl mx-auto p-8">
+      <div className="grid grid-cols-3 gap-12">
         {/* Primera columna - Navegación principal */}
         <div>
-          <h3 className="font-bold text-slate-900 mb-4 text-base">{title}</h3>
-          <div className="space-y-1">
+          <h3 className="font-bold text-slate-900 mb-6 text-lg">{title}</h3>
+          <div className="space-y-2">
             {items.map((item) => (
               <NavigationMenuLink
                 key={item.id}
-                className={`block p-2 rounded-lg hover:bg-slate-50 transition-colors cursor-pointer text-sm ${
+                className={`block p-3 rounded-lg hover:bg-slate-50 transition-colors cursor-pointer ${
                   activeSection === item.id ? "bg-blue-50 border-l-2 border-blue-500" : ""
                 }`}
                 onClick={() => scrollToSection(item.id)}
               >
-                <div className="font-medium text-slate-900">{item.label}</div>
-                <div className="text-xs text-slate-600 mt-1">{item.description}</div>
+                <div className="font-medium text-slate-900 mb-1">{item.label}</div>
+                <div className="text-sm text-slate-600">{item.description}</div>
               </NavigationMenuLink>
             ))}
           </div>
@@ -94,46 +94,52 @@ const MegaMenuNavigation = () => {
 
         {/* Segunda columna - Enlaces útiles */}
         <div>
-          <h3 className="font-bold text-slate-900 mb-4 text-base">Enlaces Útiles</h3>
-          <div className="space-y-3">
-            <a href="#" className="block text-sm text-slate-600 hover:text-blue-600 transition-colors">
+          <h3 className="font-bold text-slate-900 mb-6 text-lg">Enlaces Útiles</h3>
+          <div className="space-y-4">
+            <a href="#" className="block text-slate-600 hover:text-blue-600 transition-colors">
               Documentación API
             </a>
-            <a href="#" className="block text-sm text-slate-600 hover:text-blue-600 transition-colors">
+            <a href="#" className="block text-slate-600 hover:text-blue-600 transition-colors">
               Guías de integración
             </a>
-            <a href="#" className="block text-sm text-slate-600 hover:text-blue-600 transition-colors">
+            <a href="#" className="block text-slate-600 hover:text-blue-600 transition-colors">
               Centro de ayuda
             </a>
-            <a href="#" className="block text-sm text-slate-600 hover:text-blue-600 transition-colors">
+            <a href="#" className="block text-slate-600 hover:text-blue-600 transition-colors">
               Blog técnico
+            </a>
+            <a href="#" className="block text-slate-600 hover:text-blue-600 transition-colors">
+              Estado del servicio
+            </a>
+            <a href="#" className="block text-slate-600 hover:text-blue-600 transition-colors">
+              Comunidad
             </a>
           </div>
         </div>
 
         {/* Tercera columna - Destacado */}
-        <div className={`${highlightSection.bg} rounded-xl p-4 border border-opacity-20`}>
-          <div className={`inline-flex items-center justify-center w-10 h-10 ${highlightSection.bg} rounded-lg mb-3 border border-opacity-30`}>
-            <highlightSection.icon className={`h-5 w-5 ${highlightSection.color}`} />
+        <div className={`${highlightSection.bg} rounded-xl p-6 border border-opacity-20`}>
+          <div className={`inline-flex items-center justify-center w-12 h-12 ${highlightSection.bg} rounded-lg mb-4 border border-opacity-30`}>
+            <highlightSection.icon className={`h-6 w-6 ${highlightSection.color}`} />
           </div>
-          <h4 className="font-bold text-slate-900 mb-2 text-sm">{highlightSection.title}</h4>
-          <p className="text-xs text-slate-700 mb-3">{highlightSection.description}</p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded-lg text-xs font-medium transition-colors">
+          <h4 className="font-bold text-slate-900 mb-3 text-lg">{highlightSection.title}</h4>
+          <p className="text-sm text-slate-700 mb-4 leading-relaxed">{highlightSection.description}</p>
+          <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors w-full">
             Empezar Ahora
           </button>
         </div>
       </div>
 
       {/* Footer del menú */}
-      <div className="mt-6 pt-4 border-t border-slate-200">
+      <div className="mt-8 pt-6 border-t border-slate-200">
         <div className="flex items-center justify-between">
-          <div className="text-xs text-slate-500">
+          <div className="text-sm text-slate-500">
             ¿Necesitas ayuda? Contacta con nuestro equipo de soporte
           </div>
-          <div className="flex space-x-4">
-            <a href="#" className="text-xs text-slate-500 hover:text-blue-600">Términos</a>
-            <a href="#" className="text-xs text-slate-500 hover:text-blue-600">Privacidad</a>
-            <a href="#" className="text-xs text-slate-500 hover:text-blue-600">Estado</a>
+          <div className="flex space-x-6">
+            <a href="#" className="text-sm text-slate-500 hover:text-blue-600">Términos</a>
+            <a href="#" className="text-sm text-slate-500 hover:text-blue-600">Privacidad</a>
+            <a href="#" className="text-sm text-slate-500 hover:text-blue-600">Estado</a>
           </div>
         </div>
       </div>
@@ -165,7 +171,7 @@ const MegaMenuNavigation = () => {
                     highlightSection={{
                       icon: Rocket,
                       title: "Integración Rápida",
-                      description: "Instala AI Shield en menos de 2 minutos con nuestro snippet HTML.",
+                      description: "Instala AI Shield en menos de 2 minutos con nuestro snippet HTML y empieza a proteger tu sitio web al instante.",
                       color: "text-blue-600",
                       bg: "bg-blue-50"
                     }}
@@ -184,7 +190,7 @@ const MegaMenuNavigation = () => {
                     highlightSection={{
                       icon: Users,
                       title: "Casos de Éxito",
-                      description: "Descubre cómo empresas como la tuya protegen su contenido con AI Shield.",
+                      description: "Descubre cómo empresas como la tuya protegen su contenido y mejoran su ROI con AI Shield.",
                       color: "text-teal-600",
                       bg: "bg-teal-50"
                     }}
@@ -203,7 +209,7 @@ const MegaMenuNavigation = () => {
                     highlightSection={{
                       icon: Building2,
                       title: "Soporte Enterprise",
-                      description: "Soluciones personalizadas para grandes organizaciones con soporte 24/7.",
+                      description: "Soluciones personalizadas para grandes organizaciones con soporte 24/7 y SLA garantizado.",
                       color: "text-amber-600",
                       bg: "bg-amber-50"
                     }}
