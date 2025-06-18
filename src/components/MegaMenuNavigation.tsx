@@ -71,31 +71,31 @@ const MegaMenuNavigation = () => {
     items: typeof productItems;
     highlightSection: { icon: any; title: string; description: string; color: string; bg: string; }
   }) => (
-    <div className="w-full max-w-6xl mx-auto p-8">
+    <div className="w-full max-w-6xl mx-auto p-6">
       <div className="grid grid-cols-3 gap-8">
         {/* Primera columna - Navegación principal */}
         <div>
-          <h3 className="font-bold text-slate-900 mb-6 text-lg border-b border-slate-200 pb-3">{title}</h3>
-          <div className="space-y-2">
+          <h3 className="font-bold text-slate-900 mb-4 text-base">{title}</h3>
+          <div className="space-y-1">
             {items.map((item) => (
               <NavigationMenuLink
                 key={item.id}
-                className={`block p-3 rounded-lg hover:bg-slate-50 transition-colors cursor-pointer ${
-                  activeSection === item.id ? "bg-blue-50 border-l-4 border-blue-500" : ""
+                className={`block p-2 rounded-lg hover:bg-slate-50 transition-colors cursor-pointer text-sm ${
+                  activeSection === item.id ? "bg-blue-50 border-l-2 border-blue-500" : ""
                 }`}
                 onClick={() => scrollToSection(item.id)}
               >
-                <div className="font-medium text-slate-900 text-sm">{item.label}</div>
+                <div className="font-medium text-slate-900">{item.label}</div>
                 <div className="text-xs text-slate-600 mt-1">{item.description}</div>
               </NavigationMenuLink>
             ))}
           </div>
         </div>
 
-        {/* Segunda columna - Navegación secundaria */}
+        {/* Segunda columna - Enlaces útiles */}
         <div>
-          <h3 className="font-bold text-slate-900 mb-6 text-lg border-b border-slate-200 pb-3">Enlaces Útiles</h3>
-          <div className="space-y-4">
+          <h3 className="font-bold text-slate-900 mb-4 text-base">Enlaces Útiles</h3>
+          <div className="space-y-3">
             <a href="#" className="block text-sm text-slate-600 hover:text-blue-600 transition-colors">
               Documentación API
             </a>
@@ -112,20 +112,20 @@ const MegaMenuNavigation = () => {
         </div>
 
         {/* Tercera columna - Destacado */}
-        <div className={`${highlightSection.bg} rounded-2xl p-6 border border-opacity-20`}>
-          <div className={`inline-flex items-center justify-center w-12 h-12 ${highlightSection.bg} rounded-xl mb-4 border border-opacity-30`}>
-            <highlightSection.icon className={`h-6 w-6 ${highlightSection.color}`} />
+        <div className={`${highlightSection.bg} rounded-xl p-4 border border-opacity-20`}>
+          <div className={`inline-flex items-center justify-center w-10 h-10 ${highlightSection.bg} rounded-lg mb-3 border border-opacity-30`}>
+            <highlightSection.icon className={`h-5 w-5 ${highlightSection.color}`} />
           </div>
-          <h4 className="font-bold text-slate-900 mb-2">{highlightSection.title}</h4>
-          <p className="text-sm text-slate-700 mb-4">{highlightSection.description}</p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+          <h4 className="font-bold text-slate-900 mb-2 text-sm">{highlightSection.title}</h4>
+          <p className="text-xs text-slate-700 mb-3">{highlightSection.description}</p>
+          <button className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded-lg text-xs font-medium transition-colors">
             Empezar Ahora
           </button>
         </div>
       </div>
 
       {/* Footer del menú */}
-      <div className="mt-8 pt-6 border-t border-slate-200">
+      <div className="mt-6 pt-4 border-t border-slate-200">
         <div className="flex items-center justify-between">
           <div className="text-xs text-slate-500">
             ¿Necesitas ayuda? Contacta con nuestro equipo de soporte
@@ -158,7 +158,7 @@ const MegaMenuNavigation = () => {
                 <NavigationMenuTrigger className="text-slate-700 hover:text-blue-600">
                   Producto
                 </NavigationMenuTrigger>
-                <NavigationMenuContent>
+                <NavigationMenuContent className="left-0 top-0 w-full data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 md:absolute md:w-auto">
                   <MenuSection 
                     title="Producto" 
                     items={productItems} 
@@ -177,7 +177,7 @@ const MegaMenuNavigation = () => {
                 <NavigationMenuTrigger className="text-slate-700 hover:text-blue-600">
                   Casos de Uso
                 </NavigationMenuTrigger>
-                <NavigationMenuContent>
+                <NavigationMenuContent className="left-0 top-0 w-full data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 md:absolute md:w-auto">
                   <MenuSection 
                     title="Casos de Uso" 
                     items={useCasesItems} 
@@ -196,7 +196,7 @@ const MegaMenuNavigation = () => {
                 <NavigationMenuTrigger className="text-slate-700 hover:text-blue-600">
                   Empresa
                 </NavigationMenuTrigger>
-                <NavigationMenuContent>
+                <NavigationMenuContent className="left-0 top-0 w-full data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 md:absolute md:w-auto">
                   <MenuSection 
                     title="Empresa" 
                     items={corporateItems} 

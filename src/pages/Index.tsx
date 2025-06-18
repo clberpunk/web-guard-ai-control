@@ -6,11 +6,11 @@ import WhatWeDetect from "@/components/WhatWeDetect";
 import SimplifiedHowItWorks from "@/components/SimplifiedHowItWorks";
 import ImmediateBenefits from "@/components/ImmediateBenefits";
 import Dashboard from "@/components/Dashboard";
-import EnhancedBenefits from "@/components/EnhancedBenefits";
 import IndustrySectors from "@/components/IndustrySectors";
 import Testimonials from "@/components/Testimonials";
-import Pricing from "@/components/Pricing";
 import CompetitiveComparison from "@/components/CompetitiveComparison";
+import EnhancedBenefits from "@/components/EnhancedBenefits";
+import Pricing from "@/components/Pricing";
 import SecurityPrivacy from "@/components/SecurityPrivacy";
 import ContactForm from "@/components/ContactForm";
 import TechnicalDocs from "@/components/TechnicalDocs";
@@ -22,28 +22,59 @@ const Index = () => {
     <div className="min-h-screen">
       <MegaMenuNavigation />
       
-      {/* PRODUCTO */}
+      {/* HERO */}
       <div id="hero">
         <Hero />
       </div>
-      <Features />
-      <WhatWeDetect />
-      <SimplifiedHowItWorks />
-      <ImmediateBenefits />
-      <Dashboard />
-      <Pricing />
+      
+      {/* PRODUCTO */}
+      <div id="features">
+        <Features />
+      </div>
+      <div id="how-it-works">
+        <SimplifiedHowItWorks />
+      </div>
+      <div id="immediate-benefits">
+        <ImmediateBenefits />
+      </div>
+      <div id="dashboard">
+        <Dashboard />
+      </div>
       
       {/* CASOS DE USO */}
-      <IndustrySectors />
-      <Testimonials />
-      <CompetitiveComparison />
-      <EnhancedBenefits />
-      <SecurityPrivacy />
+      <div id="what-we-do">
+        <WhatWeDetect />
+      </div>
+      <div id="industry-sectors">
+        <IndustrySectors />
+      </div>
+      <div id="testimonials">
+        <Testimonials />
+      </div>
+      <div id="comparison">
+        <CompetitiveComparison />
+      </div>
+      <div id="enhanced-benefits">
+        <EnhancedBenefits />
+      </div>
       
       {/* EMPRESA */}
-      <ContactForm />
-      <TechnicalDocs />
-      <GlobalStats />
+      <div id="pricing">
+        <Pricing />
+      </div>
+      <div id="security-privacy">
+        <SecurityPrivacy />
+      </div>
+      <div id="contact">
+        <ContactForm />
+      </div>
+      <div id="technical-docs">
+        <TechnicalDocs />
+      </div>
+      <div id="stats">
+        <GlobalStats />
+      </div>
+      
       <Footer />
     </div>
   );
