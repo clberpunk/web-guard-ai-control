@@ -1,5 +1,4 @@
-
-import { Newspaper, GraduationCap, Palette, Code, Flask, Building } from "lucide-react";
+import { Newspaper, GraduationCap, Palette, Code, Microscope, Building } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const IndustrySectors = () => {
@@ -29,7 +28,7 @@ const IndustrySectors = () => {
       color: "text-blue-600"
     },
     {
-      icon: Flask,
+      icon: Microscope,
       title: "Farmacéutica y Biotech",
       description: "Salvaguarda de investigación médica",
       color: "text-teal-600"
