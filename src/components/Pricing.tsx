@@ -1,4 +1,3 @@
-
 import { Check, Star, Crown, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -60,7 +59,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
+    <section id="pricing" className="py-20 bg-white relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">

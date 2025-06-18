@@ -1,5 +1,5 @@
 
-import { ArrowRight, Shield, Brain, Lock } from "lucide-react";
+import { ArrowRight, Shield, Brain, Lock, Activity, AlertTriangle, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -20,54 +20,116 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto px-6 pt-20 pb-16 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-2 mb-8 animate-fade-in">
-            <Shield className="h-4 w-4 text-blue-400 mr-2" />
-            <span className="text-blue-300 text-sm font-medium">Protección IA Empresarial</span>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+          {/* Left column - Text content */}
+          <div className="text-left">
+            {/* Badge */}
+            <div className="inline-flex items-center bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-2 mb-8 animate-fade-in">
+              <Shield className="h-4 w-4 text-blue-400 mr-2" />
+              <span className="text-blue-300 text-sm font-medium">Protección IA Empresarial</span>
+            </div>
+            
+            {/* Main headline */}
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in delay-100">
+              <span className="bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
+                Human has rights.
+              </span>
+              <br />
+              <span className="text-white">AI rules.</span>
+            </h1>
+            
+            {/* Subtitle */}
+            <p className="text-lg md:text-xl text-slate-300 mb-8 animate-fade-in delay-200">
+              Limita el uso que hace la IA de tu web aplicando tus normas y condiciones.
+              <span className="block mt-2 text-base text-slate-400">
+                Protege, controla y monetiza tu contenido digital frente a IAs fraudulentas.
+              </span>
+            </p>
+            
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in delay-300">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl">
+                Empezar Ahora
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              <Button variant="outline" size="lg" className="border-slate-600 text-slate-300 hover:bg-slate-800 px-8 py-4 text-lg rounded-xl transition-all duration-300">
+                Ver Demo
+              </Button>
+            </div>
+            
+            {/* Trust indicators */}
+            <div className="grid grid-cols-3 gap-6 animate-fade-in delay-400">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-amber-400 mb-2">2min</div>
+                <div className="text-slate-400 text-sm">Instalación</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-400 mb-2">0</div>
+                <div className="text-slate-400 text-sm">Plugins necesarios</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-teal-400 mb-2">30</div>
+                <div className="text-slate-400 text-sm">Días garantía</div>
+              </div>
+            </div>
           </div>
           
-          {/* Main headline */}
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in delay-100">
-            <span className="bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
-              Human has rights.
-            </span>
-            <br />
-            <span className="text-white">AI rules.</span>
-          </h1>
-          
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto animate-fade-in delay-200">
-            Limita el uso que hace la IA de tu web aplicando tus normas y condiciones.
-            <span className="block mt-2 text-lg text-slate-400">
-              Protege, controla y monetiza tu contenido digital frente a IAs fraudulentas.
-            </span>
-          </p>
-          
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-fade-in delay-300">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl">
-              Empezar Ahora
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button variant="outline" size="lg" className="border-slate-600 text-slate-300 hover:bg-slate-800 px-8 py-4 text-lg rounded-xl transition-all duration-300">
-              Ver Demo
-            </Button>
-          </div>
-          
-          {/* Trust indicators */}
-          <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto animate-fade-in delay-400">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-amber-400 mb-2">2min</div>
-              <div className="text-slate-400 text-sm">Instalación</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-400 mb-2">0</div>
-              <div className="text-slate-400 text-sm">Plugins necesarios</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-teal-400 mb-2">30</div>
-              <div className="text-slate-400 text-sm">Días garantía</div>
+          {/* Right column - Dashboard mockup */}
+          <div className="animate-fade-in delay-500">
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl border border-white/20 overflow-hidden shadow-2xl">
+              {/* Dashboard header */}
+              <div className="bg-slate-800/50 px-6 py-4 flex items-center justify-between border-b border-white/10">
+                <div className="flex items-center space-x-4">
+                  <Shield className="h-5 w-5 text-blue-400" />
+                  <span className="text-white font-medium">Control de IAs</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 rounded-full bg-green-400"></div>
+                  <span className="text-green-400 text-xs">Activo</span>
+                </div>
+              </div>
+              
+              {/* Dashboard content */}
+              <div className="p-6 space-y-4">
+                {/* Stats row */}
+                <div className="grid grid-cols-3 gap-4 mb-6">
+                  <div className="bg-blue-500/20 rounded-lg p-3 text-center">
+                    <Activity className="h-5 w-5 text-blue-400 mx-auto mb-1" />
+                    <div className="text-white font-bold text-lg">147</div>
+                    <div className="text-blue-300 text-xs">IAs Detectadas</div>
+                  </div>
+                  <div className="bg-red-500/20 rounded-lg p-3 text-center">
+                    <AlertTriangle className="h-5 w-5 text-red-400 mx-auto mb-1" />
+                    <div className="text-white font-bold text-lg">23</div>
+                    <div className="text-red-300 text-xs">Bloqueadas</div>
+                  </div>
+                  <div className="bg-green-500/20 rounded-lg p-3 text-center">
+                    <CheckCircle className="h-5 w-5 text-green-400 mx-auto mb-1" />
+                    <div className="text-white font-bold text-lg">124</div>
+                    <div className="text-green-300 text-xs">Permitidas</div>
+                  </div>
+                </div>
+                
+                {/* AI Activity List */}
+                <div className="space-y-3">
+                  {[
+                    { name: "GPT-4", status: "Bloqueada", color: "text-red-400", bg: "bg-red-500/20" },
+                    { name: "Claude AI", status: "Permitida", color: "text-green-400", bg: "bg-green-500/20" },
+                    { name: "Unknown Bot", status: "Revisando", color: "text-amber-400", bg: "bg-amber-500/20" },
+                    { name: "Bard", status: "Limitada", color: "text-blue-400", bg: "bg-blue-500/20" }
+                  ].map((ai, index) => (
+                    <div key={index} className="flex items-center justify-between bg-white/5 rounded-lg p-3">
+                      <div className="flex items-center space-x-3">
+                        <div className="w-2 h-2 rounded-full bg-blue-400"></div>
+                        <span className="text-white text-sm font-medium">{ai.name}</span>
+                      </div>
+                      <span className={`text-xs px-2 py-1 rounded-full ${ai.bg} ${ai.color}`}>
+                        {ai.status}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>

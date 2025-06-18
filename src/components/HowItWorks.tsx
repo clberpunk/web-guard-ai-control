@@ -1,4 +1,3 @@
-
 import { Copy, Settings, Shield, BarChart } from "lucide-react";
 
 const HowItWorks = () => {
@@ -34,7 +33,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className="py-20 bg-slate-900 relative overflow-hidden">
+    <section id="how-it-works" className="py-20 bg-slate-900 relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px]"></div>
       

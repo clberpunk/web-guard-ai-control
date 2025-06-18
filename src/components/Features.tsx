@@ -1,4 +1,3 @@
-
 import { Shield, Zap, BarChart3, Bell, Code, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -43,7 +42,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
+    <section id="features" className="py-20 bg-white relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">

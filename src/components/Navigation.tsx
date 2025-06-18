@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Shield } from "lucide-react";
 
@@ -6,14 +5,13 @@ const Navigation = () => {
   const [activeSection, setActiveSection] = useState("hero");
 
   const navItems = [
-    { id: "hero", label: "Inicio" },
-    { id: "stats", label: "Estadísticas" },
     { id: "features", label: "Características" },
-    { id: "benefits", label: "Beneficios" },
-    { id: "comparison", label: "Comparativa" },
+    { id: "stats", label: "Estadísticas" },
     { id: "how-it-works", label: "Cómo Funciona" },
+    { id: "benefits", label: "Beneficios" },
     { id: "testimonials", label: "Testimonios" },
     { id: "pricing", label: "Precios" },
+    { id: "comparison", label: "Comparativa" },
     { id: "contact", label: "Contacto" }
   ];
 
