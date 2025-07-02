@@ -58,7 +58,7 @@ const EnhancedBenefits = () => {
           
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
             <span className="text-blue-600">🧩 Problema Resuelto</span>
-            <span className="block mt-2">🧠 Lo que AI SHIELD te permite</span>
+            <span className="block mt-2">🧠 Lo que iAlert te permite</span>
           </h2>
         </div>
         

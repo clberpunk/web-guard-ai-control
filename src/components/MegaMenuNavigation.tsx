@@ -71,8 +71,8 @@ const MegaMenuNavigation = () => {
     items: typeof productItems;
     highlightSection: { icon: any; title: string; description: string; color: string; bg: string; }
   }) => (
-    <div className="w-full max-w-7xl mx-auto p-8">
-      <div className="grid grid-cols-3 gap-12">
+    <div className="w-[900px] p-8">
+      <div className="grid grid-cols-3 gap-8">
         {/* Primera columna - Navegación principal */}
         <div>
           <h3 className="font-bold text-slate-900 mb-6 text-lg">{title}</h3>
@@ -155,7 +155,7 @@ const MegaMenuNavigation = () => {
             onClick={() => scrollToSection("hero")}
           >
             <Shield className="h-8 w-8 text-blue-600 mr-3" />
-            <span className="text-xl font-bold text-slate-900">AI SHIELD</span>
+            <span className="text-xl font-bold text-slate-900">iAlert</span>
           </div>
           
           <NavigationMenu className="hidden lg:flex">
@@ -171,7 +171,7 @@ const MegaMenuNavigation = () => {
                     highlightSection={{
                       icon: Rocket,
                       title: "Integración Rápida",
-                      description: "Instala AI Shield en menos de 2 minutos con nuestro snippet HTML y empieza a proteger tu sitio web al instante.",
+                      description: "Instala iAlert en menos de 2 minutos con nuestro snippet HTML y empieza a proteger tu sitio web al instante.",
                       color: "text-blue-600",
                       bg: "bg-blue-50"
                     }}
@@ -190,7 +190,7 @@ const MegaMenuNavigation = () => {
                     highlightSection={{
                       icon: Users,
                       title: "Casos de Éxito",
-                      description: "Descubre cómo empresas como la tuya protegen su contenido y mejoran su ROI con AI Shield.",
+                      description: "Descubre cómo empresas como la tuya protegen su contenido y mejoran su ROI con iAlert.",
                       color: "text-teal-600",
                       bg: "bg-teal-50"
                     }}

@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -34,7 +35,7 @@ const ContactForm = () => {
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
             Contacta con nuestro equipo para una consulta personalizada y descubre 
-            cómo AI SHIELD puede proteger tu negocio.
+            cómo iAlert puede proteger tu negocio.
           </p>
         </div>
         
@@ -46,7 +47,7 @@ const ContactForm = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Mail className="h-6 w-6 text-blue-400 mr-4" />
-                  <span className="text-slate-300">hola@aishield.es</span>
+                  <span className="text-slate-300">hola@ialert.es</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-6 w-6 text-blue-400 mr-4" />
