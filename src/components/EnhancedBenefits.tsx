@@ -48,7 +48,7 @@ const EnhancedBenefits = () => {
   ];
 
   return (
-    <section id="benefits" className="py-20 bg-white">
+    <section id="enhanced-benefits" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <div className="inline-flex items-center bg-green-100 border border-green-200 rounded-full px-4 py-2 mb-8">

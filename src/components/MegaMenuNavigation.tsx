@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Shield, ChevronDown, Rocket, Users, Building2 } from "lucide-react";
 import {
@@ -60,6 +59,14 @@ const MegaMenuNavigation = () => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const handleFreeTrial = () => {
+    window.open('https://ialert.ciberpunk.es/auth/login', '_blank');
+  };
+
+  const handleStartNow = () => {
+    window.open('https://ialert.ciberpunk.es/auth/login', '_blank');
   };
 
   const MenuSection = ({ 
@@ -124,7 +131,10 @@ const MegaMenuNavigation = () => {
           </div>
           <h4 className="font-bold text-slate-900 mb-3 text-lg">{highlightSection.title}</h4>
           <p className="text-sm text-slate-700 mb-4 leading-relaxed">{highlightSection.description}</p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors w-full">
+          <button 
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors w-full"
+            onClick={handleStartNow}
+          >
             Empezar Ahora
           </button>
         </div>
@@ -219,7 +229,10 @@ const MegaMenuNavigation = () => {
             </NavigationMenuList>
           </NavigationMenu>
           
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
+          <button 
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+            onClick={handleFreeTrial}
+          >
             Prueba Gratuita
           </button>
         </div>

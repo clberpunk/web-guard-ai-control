@@ -3,6 +3,10 @@ import { ArrowRight, Shield, Brain, Lock, Activity, AlertTriangle, CheckCircle }
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
+  const handleStartNow = () => {
+    window.open('https://ialert.ciberpunk.es/auth/login', '_blank');
+  };
+
   return (
     <section className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 relative overflow-hidden">
       {/* Animated background elements */}
@@ -48,7 +52,11 @@ const Hero = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in delay-300">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl">
+              <Button 
+                size="lg" 
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl"
+                onClick={handleStartNow}
+              >
                 Empezar Ahora
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
