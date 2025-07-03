@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Shield } from "lucide-react";
 
@@ -40,13 +41,17 @@ const Navigation = () => {
     }
   };
 
+  const handleFreeTrial = () => {
+    window.open('https://ialert.ciberpunk.es/auth/login', '_blank');
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-slate-200/50">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Shield className="h-8 w-8 text-blue-600 mr-3" />
-            <span className="text-xl font-bold text-slate-900">AI SHIELD</span>
+            <span className="text-xl font-bold text-slate-900">iAlert</span>
           </div>
           
           <div className="hidden lg:flex items-center space-x-1">
@@ -65,7 +70,10 @@ const Navigation = () => {
             ))}
           </div>
           
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
+          <button 
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+            onClick={handleFreeTrial}
+          >
             Prueba Gratuita
           </button>
         </div>
