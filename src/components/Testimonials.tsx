@@ -1,13 +1,18 @@
 
 import { Star, Quote } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
+import { getTranslation } from "@/i18n";
 
 const Testimonials = () => {
+  const { currentLanguage } = useLanguage();
+  const t = getTranslation(currentLanguage);
+
   const testimonials = [
     {
       name: "Marta Alonso",
       role: "Directora de Marketing Digital",
       company: "TechFlow Solutions",
-      case: "Trademark Impersonation and Reputational Damage",
+      case: t.testimonials.trademarkCase,
       image: "/placeholder.svg",
       testimonial: "Detectamos que varias IAs estaban usando nuestra marca registrada para generar contenido competidor. AI SHIELD nos alertó inmediatamente y pudimos bloquear estos usos no autorizados, protegiendo nuestra reputación online.",
       rating: 5,
@@ -17,7 +22,7 @@ const Testimonials = () => {
       name: "Juan Antonio Méndez",
       role: "CTO",
       company: "InnovaManufacturing",
-      case: "Protection of Industrial Processes and Patents",
+      case: t.testimonials.industrialCase,
       image: "/placeholder.svg",
       testimonial: "Nuestros procesos industriales patentados estaban siendo analizados por crawlers de IA. Con AI SHIELD pudimos crear una zona de licenciamiento específica que nos genera ingresos adicionales mientras protegemos nuestra propiedad intelectual.",
       rating: 5,
@@ -27,7 +32,7 @@ const Testimonials = () => {
       name: "Carmen Rivera",
       role: "Escritora y Guionista",
       company: "Independent Creator",
-      case: "Writer, Translator, and Screenwriter: Content Protection",
+      case: t.testimonials.contentCase,
       image: "/placeholder.svg",
       testimonial: "Como creadora de contenido, era crucial proteger mis obras originales. AI SHIELD me permite controlar exactamente qué IAs pueden acceder a mi trabajo y bajo qué términos, monetizando mi contenido de forma justa.",
       rating: 5,
@@ -37,7 +42,7 @@ const Testimonials = () => {
       name: "Roberto Silva",
       role: "SEO Manager",
       company: "Digital Marketing Pro",
-      case: "Marketing Agency: SEO Improvement",
+      case: t.testimonials.seoCase,
       image: "/placeholder.svg",
       testimonial: "El tráfico de bots estaba distorsionando nuestras métricas de SEO. AI SHIELD nos permite diferenciar claramente entre tráfico humano y de IA, mejorando significativamente nuestros informes y estrategias SEO.",
       rating: 5,
@@ -50,12 +55,11 @@ const Testimonials = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            Casos de éxito reales
-            <span className="block text-blue-600">de nuestros clientes</span>
+            {t.testimonials.title}
+            <span className="block text-blue-600">{t.testimonials.subtitle}</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Descubre cómo empresas de diferentes sectores han protegido y monetizado 
-            su contenido digital con AI SHIELD.
+            {t.testimonials.description}
           </p>
         </div>
         
@@ -93,7 +97,7 @@ const Testimonials = () => {
               </p>
               
               <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                <div className="text-green-800 font-semibold text-sm">Resultado:</div>
+                <div className="text-green-800 font-semibold text-sm">{t.testimonials.result}</div>
                 <div className="text-green-700 font-bold">{testimonial.results}</div>
               </div>
             </div>

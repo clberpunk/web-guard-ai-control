@@ -1,31 +1,36 @@
 
 import { Shield, Users, Globe, Zap } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
+import { getTranslation } from "@/i18n";
 
 const GlobalStats = () => {
+  const { currentLanguage } = useLanguage();
+  const t = getTranslation(currentLanguage);
+
   const stats = [
     {
       icon: Globe,
       value: "2.5M+",
-      label: "Sitios Web Protegidos",
-      description: "Desde nuestro lanzamiento"
+      label: t.globalStats.websitesProtected,
+      description: t.globalStats.websitesProtectedDesc
     },
     {
       icon: Shield,
       value: "847M",
-      label: "Amenazas IA Bloqueadas",
-      description: "En los últimos 30 días"
+      label: t.globalStats.threatsBlocked,
+      description: t.globalStats.threatsBlockedDesc
     },
     {
       icon: Users,
       value: "12,000+",
-      label: "Empresas Confiando",
-      description: "En nuestra plataforma"
+      label: t.globalStats.companiesTrusting,
+      description: t.globalStats.companiesTrustingDesc
     },
     {
       icon: Zap,
       value: "99.97%",
-      label: "Uptime Garantizado",
-      description: "Disponibilidad del servicio"
+      label: t.globalStats.uptimeGuaranteed,
+      description: t.globalStats.uptimeGuaranteedDesc
     }
   ];
 
@@ -34,12 +39,11 @@ const GlobalStats = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            Protegiendo el futuro digital
-            <span className="block text-blue-600">desde 2023</span>
+            {t.globalStats.title}
+            <span className="block text-blue-600">{t.globalStats.subtitle}</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Miles de empresas ya confían en nuestra tecnología para proteger 
-            su contenido digital de inteligencias artificiales no autorizadas.
+            {t.globalStats.description}
           </p>
         </div>
         

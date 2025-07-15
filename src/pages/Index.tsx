@@ -5,8 +5,8 @@ import TranslatedFeatures from "@/components/TranslatedFeatures";
 import TranslatedWhatWeDetect from "@/components/TranslatedWhatWeDetect";
 import TranslatedSimplifiedHowItWorks from "@/components/TranslatedSimplifiedHowItWorks";
 import TranslatedImmediateBenefits from "@/components/TranslatedImmediateBenefits";
-import Dashboard from "@/components/Dashboard";
-import IndustrySectors from "@/components/IndustrySectors";
+import TranslatedDashboard from "@/components/TranslatedDashboard";
+import TranslatedIndustrySectors from "@/components/TranslatedIndustrySectors";
 import Testimonials from "@/components/Testimonials";
 import CompetitiveComparison from "@/components/CompetitiveComparison";
 import EnhancedBenefits from "@/components/EnhancedBenefits";
@@ -38,7 +38,7 @@ const Index = () => {
         <TranslatedImmediateBenefits />
       </div>
       <div id="dashboard">
-        <Dashboard />
+        <TranslatedDashboard />
       </div>
       
       {/* CASOS DE USO */}
@@ -46,7 +46,7 @@ const Index = () => {
         <TranslatedWhatWeDetect />
       </div>
       <div id="industry-sectors">
-        <IndustrySectors />
+        <TranslatedIndustrySectors />
       </div>
       <div id="testimonials">
         <Testimonials />
