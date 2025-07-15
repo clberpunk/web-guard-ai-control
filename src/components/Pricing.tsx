@@ -1,59 +1,47 @@
-import { Check, Star, Crown, Zap } from "lucide-react";
+
+import { Check, Star, Crown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 const Pricing = () => {
   const plans = [
     {
-      name: "Individual",
-      price: "799",
-      period: "año",
-      icon: Zap,
-      iconColor: "text-blue-500",
-      bgGradient: "from-blue-50 to-white",
-      borderColor: "border-blue-200",
-      features: [
-        "1 dominio protegido",
-        "Páginas ilimitadas",
-        "5 usuarios panel de control",
-        "100.000 análisis al mes",
-        "Tickets de soporte 72h",
-        "Alertas por correo"
-      ]
-    },
-    {
-      name: "PYME",
-      price: "3.999",
-      period: "año",
+      name: "Free",
+      price: "0",
+      period: "siempre",
       icon: Star,
-      iconColor: "text-amber-500",
-      bgGradient: "from-amber-50 to-white",
-      borderColor: "border-amber-200",
-      popular: true,
+      iconColor: "text-neon-lime",
+      bgGradient: "from-neon-lime/10 to-dark-surface",
+      borderColor: "neon-border",
       features: [
-        "5 dominios protegidos",
-        "15 usuarios panel",
-        "1.000.000 análisis al mes",
-        "Consultoría post instalación 1h",
-        "Tickets prioritarios 24h",
-        "Alertas telefónicas"
+        "Detección básica de IAs",
+        "Reportes semanales",
+        "1 dominio protegido",
+        "Hasta 10,000 análisis/mes",
+        "Soporte por email",
+        "Panel de control básico"
       ]
     },
     {
-      name: "Paranoid",
-      price: "11.999",
+      name: "Pro",
+      price: "119",
       period: "año",
       icon: Crown,
-      iconColor: "text-purple-500",
-      bgGradient: "from-purple-50 to-white",
-      borderColor: "border-purple-200",
+      iconColor: "text-neon-cyan",
+      bgGradient: "from-neon-cyan/10 to-dark-surface",
+      borderColor: "border border-cyan-400/20",
+      popular: true,
       features: [
-        "Servidor tier 2 en España",
-        "Cloud propia para análisis",
-        "Protección backend completa",
-        "Machine learning + IA",
-        "Contactos avanzados con IAs",
-        "Instalación por nuestro equipo"
+        "Detección avanzada de IAs",
+        "Bloqueo y disuasión activa",
+        "Dominios ilimitados",
+        "Análisis ilimitados",
+        "Reportes en tiempo real",
+        "Alertas personalizadas",
+        "Reglas de control granular",
+        "Soporte prioritario 24h",
+        "API completa",
+        "Integración con webhooks"
       ]
     }
   ];
@@ -64,27 +52,29 @@ const Pricing = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
             Elige tu nivel de
-            <span className="block text-blue-600">protección</span>
+            <span className="block bg-gradient-to-r from-neon-lime to-neon-cyan bg-clip-text text-transparent">
+              protección
+            </span>
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
-            Planes diseñados para cada tipo de negocio, desde emprendedores hasta empresas paranoides de la seguridad.
+            Dos planes simples: empieza gratis para detectar IAs, o pasa a Pro para bloquear y controlar completamente.
           </p>
-          <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
+          <div className="inline-flex items-center bg-neon-lime/10 text-neon-lime-dark px-4 py-2 rounded-full font-medium neon-border">
             🎉 30 días de garantía de devolución
           </div>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {plans.map((plan, index) => (
             <Card key={index} className={`relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl ${plan.borderColor} bg-gradient-to-br ${plan.bgGradient}`}>
               {plan.popular && (
-                <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-amber-400 to-amber-500 text-white text-center py-2 text-sm font-semibold">
+                <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-neon-cyan to-neon-lime text-dark-bg text-center py-2 text-sm font-semibold">
                   ⭐ Más Popular
                 </div>
               )}
               
               <CardHeader className={`text-center ${plan.popular ? 'pt-12' : 'pt-8'}`}>
-                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white shadow-lg mb-4 ${plan.iconColor}`}>
+                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-dark-surface shadow-lg mb-4 ${plan.iconColor} neon-glow`}>
                   <plan.icon className="h-8 w-8" />
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">{plan.name}</h3>
@@ -98,7 +88,7 @@ const Pricing = () => {
                 <ul className="space-y-4 mb-8">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start">
-                      <Check className="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
+                      <Check className="h-5 w-5 text-neon-lime mt-0.5 mr-3 flex-shrink-0" />
                       <span className="text-slate-700">{feature}</span>
                     </li>
                   ))}
@@ -106,10 +96,10 @@ const Pricing = () => {
                 
                 <Button className={`w-full py-3 font-semibold transition-all duration-300 ${
                   plan.popular 
-                    ? 'bg-amber-500 hover:bg-amber-600 text-white shadow-lg hover:shadow-xl' 
-                    : 'bg-slate-900 hover:bg-slate-800 text-white'
+                    ? 'bg-neon-cyan hover:bg-cyan-400 text-dark-bg neon-glow' 
+                    : 'bg-neon-lime hover:bg-lime-400 text-dark-bg neon-glow'
                 }`}>
-                  {plan.popular ? 'Empezar Ahora' : 'Seleccionar Plan'}
+                  {plan.popular ? 'Empezar Ahora' : 'Comenzar Gratis'}
                 </Button>
               </CardContent>
             </Card>
@@ -117,7 +107,7 @@ const Pricing = () => {
         </div>
         
         <div className="text-center mt-12">
-          <p className="text-slate-600 mb-4">¿Necesitas algo personalizado?</p>
+          <p className="text-slate-600 mb-4">¿Necesitas algo personalizado para tu empresa?</p>
           <Button variant="outline" className="border-slate-300 text-slate-700 hover:bg-slate-50">
             Contactar Ventas
           </Button>
