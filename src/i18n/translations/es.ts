@@ -1,10 +1,28 @@
-
 export const es = {
   nav: {
     product: "Producto",
-    useCases: "Casos de Uso",
+    useCases: "Casos de Uso", 
     company: "Empresa",
     freeTrial: "Prueba Gratis"
+  },
+  megamenu: {
+    usefulLinks: "Enlaces Útiles",
+    apiDocs: "Documentación API",
+    integrationGuides: "Guías de integración",
+    helpCenter: "Centro de ayuda",
+    techBlog: "Blog técnico",
+    serviceStatus: "Estado del servicio",
+    community: "Comunidad",
+    needHelp: "¿Necesitas ayuda? Contacta con nuestro equipo de soporte",
+    terms: "Términos",
+    privacy: "Privacidad",
+    status: "Estado",
+    quickIntegration: "Integración Rápida",
+    quickIntegrationDesc: "Instala iAlert en menos de 2 minutos con nuestro snippet HTML y empieza a proteger tu sitio web al instante.",
+    successCases: "Casos de Éxito",
+    successCasesDesc: "Descubre cómo empresas como la tuya protegen su contenido y mejoran su ROI con iAlert.",
+    enterpriseSupport: "Soporte Enterprise",
+    enterpriseSupportDesc: "Soluciones personalizadas para grandes organizaciones con soporte 24/7 y SLA garantizado."
   },
   product: {
     features: "Características",
