@@ -59,11 +59,25 @@ export const pt = {
     statsDesc: "Números que comprovam nossa eficácia"
   },
   hero: {
+    badge: "Proteção IA Empresarial",
     title: "Proteja seu conteúdo digital",
     subtitle: "da IA não autorizada",
     description: "A primeira plataforma que detecta e bloqueia bots de IA que consomem seus recursos, copiam seu conteúdo e distorcem suas métricas sem permissão.",
+    subdescription: "Proteja, controle e monetize seu conteúdo digital contra IAs fraudulentas.",
     startNow: "Começar Agora",
-    freeTrial: "Teste Gratuito"
+    freeTrial: "Teste Gratuito",
+    installation: "Instalação",
+    plugins: "Plugins necessários",
+    guarantee: "Dias de garantia",
+    dashboardTitle: "Controle de IA",
+    active: "Ativo",
+    detected: "IAs Detectadas",
+    blocked: "Bloqueadas",
+    allowed: "Permitidas",
+    statusBlocked: "Bloqueada",
+    statusAllowed: "Permitida",
+    statusReviewing: "Revisando",
+    statusLimited: "Limitada"
   },
   features: {
     title: "Proteja seu conteúdo digital",
@@ -163,7 +177,7 @@ export const pt = {
     companiesTrusting: "Empresas Confiando",
     companiesTrustingDesc: "Organizações que implementaram nossa solução",
     uptimeGuaranteed: "Tempo de Atividade",
-    uptimeGuaranteedDesc: "Disponibilidade garantida de nossos serviços"
+    uptimeGuaranteedDesc: "Disponibilidade garantizada de nossos serviços"
   },
   testimonials: {
     title: "O que dizem",
@@ -258,5 +272,112 @@ export const pt = {
         solution: "Listas brancas por IA, IP ou User-Agent. Você também pode monetizar o acesso a certos modelos."
       }
     }
+  },
+  pricing: {
+    title: "Planos que se adaptam",
+    subtitle: "ao seu negócio",
+    description: "De startups a empresas, temos o plano perfeito para proteger seu conteúdo digital.",
+    starter: {
+      name: "Starter",
+      price: "€29",
+      period: "/mês",
+      description: "Perfeito para sites pequenos e médios",
+      features: [
+        "Até 100.000 visitas/mês",
+        "Detecção básica de bots",
+        "Painel de controle padrão",
+        "Suporte por email",
+        "Relatórios mensais"
+      ],
+      cta: "Iniciar teste gratuito"
+    },
+    professional: {
+      name: "Professional",
+      price: "€89",
+      period: "/mês",
+      description: "Ideal para empresas em crescimento",
+      features: [
+        "Até 500.000 visitas/mês",
+        "Detecção avançada de IA",
+        "Regras personalizadas",
+        "API completa",
+        "Suporte prioritário",
+        "Relatórios em tempo real",
+        "Integrações webhook"
+      ],
+      cta: "Iniciar teste gratuito",
+      popular: "Mais popular"
+    },
+    enterprise: {
+      name: "Enterprise",
+      price: "Personalizado",
+      period: "",
+      description: "Soluções empresariais sob medida",
+      features: [
+        "Visitas ilimitadas",
+        "IA personalizada",
+        "SLA garantido",
+        "Suporte dedicado 24/7",
+        "Integrações personalizadas",
+        "Consultoria especializada",
+        "Conformidade regulatória"
+      ],
+      cta: "Contatar vendas"
+    },
+    faq: {
+      title: "Perguntas frequentes",
+      q1: {
+        question: "Posso alterar planos a qualquer momento?",
+        answer: "Sim, você pode fazer upgrade ou downgrade do seu plano a qualquer momento. As mudanças se aplicarão no seu próximo ciclo de cobrança."
+      },
+      q2: {
+        question: "Vocês oferecem descontos para pagamento anual?",
+        answer: "Sim, oferecemos 20% de desconto para todos os planos com cobrança anual."
+      },
+      q3: {
+        question: "O que inclui o suporte técnico?",
+        answer: "O suporte inclui assistência por email, documentação completa e, para planos superiores, suporte prioritário e consultoria técnica."
+      }
+    }
+  },
+  contact: {
+    title: "Tem perguntas?",
+    subtitle: "Estamos aqui para ajudar",
+    description: "Nossa equipe de especialistas está pronta para responder todas as suas dúvidas sobre o iAlert e ajudá-lo a proteger seu conteúdo digital.",
+    form: {
+      name: "Nome completo",
+      email: "Email corporativo",
+      company: "Empresa",
+      message: "Mensagem",
+      submit: "Enviar mensagem",
+      sending: "Enviando...",
+      success: "Mensagem enviada! Entraremos em contato em breve.",
+      error: "Erro ao enviar. Tente novamente."
+    },
+    info: {
+      email: "Email",
+      phone: "Telefone",
+      address: "Endereço",
+      hours: "Horário de atendimento"
+    }
+  },
+  footer: {
+    description: "A plataforma líder em proteção contra IA não autorizada. Proteja seu conteúdo digital com tecnologia de ponta.",
+    product: "Produto",
+    company: "Empresa",
+    resources: "Recursos",
+    legal: "Legal",
+    newsletter: {
+      title: "Mantenha-se atualizado",
+      description: "Receba as últimas notícias sobre proteção de IA e atualizações do produto.",
+      placeholder: "Seu email",
+      subscribe: "Inscrever-se",
+      success: "Inscrito com sucesso!",
+      error: "Erro na inscrição"
+    },
+    rights: "Todos os direitos reservados.",
+    privacy: "Política de Privacidade",
+    terms: "Termos de Serviço",
+    cookies: "Política de Cookies"
   }
 };

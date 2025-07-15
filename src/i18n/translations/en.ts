@@ -59,11 +59,25 @@ export const en = {
     statsDesc: "Numbers that prove our effectiveness"
   },
   hero: {
+    badge: "Enterprise AI Protection",
     title: "Protect your digital content",
     subtitle: "from unauthorized AI",
     description: "The first platform that detects and blocks AI bots that consume your resources, copy your content, and distort your metrics without permission.",
+    subdescription: "Protect, control and monetize your digital content against fraudulent AIs.",
     startNow: "Start Now",
-    freeTrial: "Free Trial"
+    freeTrial: "Free Trial",
+    installation: "Installation",
+    plugins: "Plugins needed",
+    guarantee: "Days guarantee",
+    dashboardTitle: "AI Control",
+    active: "Active",
+    detected: "AIs Detected",
+    blocked: "Blocked",
+    allowed: "Allowed",
+    statusBlocked: "Blocked",
+    statusAllowed: "Allowed",
+    statusReviewing: "Reviewing",
+    statusLimited: "Limited"
   },
   features: {
     title: "Protect your digital content",
@@ -258,5 +272,112 @@ export const en = {
         solution: "Whitelists by AI, IP, or User-Agent. You can also monetize access to certain models."
       }
     }
+  },
+  pricing: {
+    title: "Plans that adapt",
+    subtitle: "to your business",
+    description: "From startups to enterprises, we have the perfect plan to protect your digital content.",
+    starter: {
+      name: "Starter",
+      price: "€29",
+      period: "/month",
+      description: "Perfect for small and medium websites",
+      features: [
+        "Up to 100,000 visits/month",
+        "Basic bot detection",
+        "Standard control panel",
+        "Email support",
+        "Monthly reports"
+      ],
+      cta: "Start free trial"
+    },
+    professional: {
+      name: "Professional",
+      price: "€89",
+      period: "/month",
+      description: "Ideal for growing companies",
+      features: [
+        "Up to 500,000 visits/month",
+        "Advanced AI detection",
+        "Custom rules",
+        "Complete API",
+        "Priority support",
+        "Real-time reports",
+        "Webhook integrations"
+      ],
+      cta: "Start free trial",
+      popular: "Most popular"
+    },
+    enterprise: {
+      name: "Enterprise",
+      price: "Custom",
+      period: "",
+      description: "Tailored enterprise solutions",
+      features: [
+        "Unlimited visits",
+        "Custom AI",
+        "Guaranteed SLA",
+        "24/7 dedicated support",
+        "Custom integrations",
+        "Specialized consulting",
+        "Regulatory compliance"
+      ],
+      cta: "Contact sales"
+    },
+    faq: {
+      title: "Frequently asked questions",
+      q1: {
+        question: "Can I change plans at any time?",
+        answer: "Yes, you can upgrade or downgrade your plan at any time. Changes will apply in your next billing cycle."
+      },
+      q2: {
+        question: "Do you offer discounts for annual payment?",
+        answer: "Yes, we offer a 20% discount for all plans with annual billing."
+      },
+      q3: {
+        question: "What does technical support include?",
+        answer: "Support includes email assistance, complete documentation, and for higher plans, priority support and technical consulting."
+      }
+    }
+  },
+  contact: {
+    title: "Have questions?",
+    subtitle: "We're here to help",
+    description: "Our team of experts is ready to answer all your questions about iAlert and help you protect your digital content.",
+    form: {
+      name: "Full name",
+      email: "Corporate email",
+      company: "Company",
+      message: "Message",
+      submit: "Send message",
+      sending: "Sending...",
+      success: "Message sent! We'll contact you soon.",
+      error: "Error sending. Please try again."
+    },
+    info: {
+      email: "Email",
+      phone: "Phone",
+      address: "Address",
+      hours: "Business hours"
+    }
+  },
+  footer: {
+    description: "The leading platform in unauthorized AI protection. Protect your digital content with cutting-edge technology.",
+    product: "Product",
+    company: "Company",
+    resources: "Resources",
+    legal: "Legal",
+    newsletter: {
+      title: "Stay updated",
+      description: "Get the latest news about AI protection and product updates.",
+      placeholder: "Your email",
+      subscribe: "Subscribe",
+      success: "Successfully subscribed!",
+      error: "Subscription error"
+    },
+    rights: "All rights reserved.",
+    privacy: "Privacy Policy",
+    terms: "Terms of Service",
+    cookies: "Cookie Policy"
   }
 };
