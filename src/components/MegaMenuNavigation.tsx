@@ -8,31 +8,92 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useLanguage } from "@/hooks/useLanguage";
+import { getTranslation } from "@/i18n";
 
 const MegaMenuNavigation = () => {
   const [activeSection, setActiveSection] = useState("hero");
+  const { currentLanguage } = useLanguage();
+  const t = getTranslation(currentLanguage);
 
   const productItems = [
-    { id: "features", label: "Características", description: "Funcionalidades principales" },
-    { id: "how-it-works", label: "Cómo Funciona", description: "Proceso en 3 pasos" },
-    { id: "immediate-benefits", label: "Beneficios", description: "Ventajas inmediatas" },
-    { id: "dashboard", label: "Dashboard", description: "Panel de control" }
+    { 
+      id: "features", 
+      label: t.product.features, 
+      description: t.product.featuresDesc 
+    },
+    { 
+      id: "how-it-works", 
+      label: t.product.howItWorks, 
+      description: t.product.howItWorksDesc 
+    },
+    { 
+      id: "immediate-benefits", 
+      label: t.product.benefits, 
+      description: t.product.benefitsDesc 
+    },
+    { 
+      id: "dashboard", 
+      label: t.product.dashboard, 
+      description: t.product.dashboardDesc 
+    }
   ];
 
   const useCasesItems = [
-    { id: "what-we-do", label: "Qué Hacemos", description: "Detección y bloqueo" },
-    { id: "industry-sectors", label: "Sectores", description: "Industrias compatibles" },
-    { id: "testimonials", label: "Testimonios", description: "Casos de éxito" },
-    { id: "comparison", label: "Comparativa", description: "Vs competencia" },
-    { id: "enhanced-benefits", label: "Casos de Uso", description: "Problemas resueltos" }
+    { 
+      id: "what-we-do", 
+      label: t.useCases.whatWeDo, 
+      description: t.useCases.whatWeDoDesc 
+    },
+    { 
+      id: "industry-sectors", 
+      label: t.useCases.sectors, 
+      description: t.useCases.sectorsDesc 
+    },
+    { 
+      id: "testimonials", 
+      label: t.useCases.testimonials, 
+      description: t.useCases.testimonialsDesc 
+    },
+    { 
+      id: "comparison", 
+      label: t.useCases.comparison, 
+      description: t.useCases.comparisonDesc 
+    },
+    { 
+      id: "enhanced-benefits", 
+      label: t.useCases.enhancedBenefits, 
+      description: t.useCases.enhancedBenefitsDesc 
+    }
   ];
 
   const corporateItems = [
-    { id: "pricing", label: "Precios", description: "Planes y tarifas" },
-    { id: "security-privacy", label: "Seguridad", description: "Privacidad y compliance" },
-    { id: "contact", label: "Contacto", description: "Ponte en contacto" },
-    { id: "technical-docs", label: "Documentación", description: "Guías técnicas" },
-    { id: "stats", label: "Impacto Global", description: "Estadísticas de uso" }
+    { 
+      id: "pricing", 
+      label: t.company.pricing, 
+      description: t.company.pricingDesc 
+    },
+    { 
+      id: "security-privacy", 
+      label: t.company.security, 
+      description: t.company.securityDesc 
+    },
+    { 
+      id: "contact", 
+      label: t.company.contact, 
+      description: t.company.contactDesc 
+    },
+    { 
+      id: "technical-docs", 
+      label: t.company.documentation, 
+      description: t.company.documentationDesc 
+    },
+    { 
+      id: "stats", 
+      label: t.company.stats, 
+      description: t.company.statsDesc 
+    }
   ];
 
   useEffect(() => {
@@ -101,25 +162,25 @@ const MegaMenuNavigation = () => {
 
         {/* Segunda columna - Enlaces útiles */}
         <div>
-          <h3 className="font-bold text-slate-900 mb-6 text-lg">Enlaces Útiles</h3>
+          <h3 className="font-bold text-slate-900 mb-6 text-lg">{t.common.documentation}</h3>
           <div className="space-y-4">
             <a href="#" className="block text-slate-600 hover:text-blue-600 transition-colors">
-              Documentación API
+              {t.common.apiDocs}
             </a>
             <a href="#" className="block text-slate-600 hover:text-blue-600 transition-colors">
-              Guías de integración
+              {t.common.integrationGuides}
             </a>
             <a href="#" className="block text-slate-600 hover:text-blue-600 transition-colors">
-              Centro de ayuda
+              {t.common.helpCenter}
             </a>
             <a href="#" className="block text-slate-600 hover:text-blue-600 transition-colors">
-              Blog técnico
+              {t.common.techBlog}
             </a>
             <a href="#" className="block text-slate-600 hover:text-blue-600 transition-colors">
-              Estado del servicio
+              {t.common.serviceStatus}
             </a>
             <a href="#" className="block text-slate-600 hover:text-blue-600 transition-colors">
-              Comunidad
+              {t.common.community}
             </a>
           </div>
         </div>
@@ -135,7 +196,7 @@ const MegaMenuNavigation = () => {
             className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors w-full"
             onClick={handleStartNow}
           >
-            Empezar Ahora
+            {t.hero.startNow}
           </button>
         </div>
       </div>
@@ -144,12 +205,12 @@ const MegaMenuNavigation = () => {
       <div className="mt-8 pt-6 border-t border-slate-200">
         <div className="flex items-center justify-between">
           <div className="text-sm text-slate-500">
-            ¿Necesitas ayuda? Contacta con nuestro equipo de soporte
+            {t.common.needHelp}
           </div>
           <div className="flex space-x-6">
-            <a href="#" className="text-sm text-slate-500 hover:text-blue-600">Términos</a>
-            <a href="#" className="text-sm text-slate-500 hover:text-blue-600">Privacidad</a>
-            <a href="#" className="text-sm text-slate-500 hover:text-blue-600">Estado</a>
+            <a href="#" className="text-sm text-slate-500 hover:text-blue-600">{t.common.terms}</a>
+            <a href="#" className="text-sm text-slate-500 hover:text-blue-600">{t.common.privacy}</a>
+            <a href="#" className="text-sm text-slate-500 hover:text-blue-600">{t.common.status}</a>
           </div>
         </div>
       </div>
@@ -172,16 +233,20 @@ const MegaMenuNavigation = () => {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-slate-700 hover:text-blue-600">
-                  Producto
+                  {t.nav.product}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="left-0 top-0 w-full data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 md:absolute md:w-auto">
                   <MenuSection 
-                    title="Producto" 
+                    title={t.product.title} 
                     items={productItems} 
                     highlightSection={{
                       icon: Rocket,
-                      title: "Integración Rápida",
-                      description: "Instala iAlert en menos de 2 minutos con nuestro snippet HTML y empieza a proteger tu sitio web al instante.",
+                      title: currentLanguage === 'en' ? 'Quick Integration' : currentLanguage === 'pt' ? 'Integração Rápida' : 'Integración Rápida',
+                      description: currentLanguage === 'en' 
+                        ? 'Install iAlert in less than 2 minutes with our HTML snippet and start protecting your website instantly.'
+                        : currentLanguage === 'pt' 
+                        ? 'Instale o iAlert em menos de 2 minutos com nosso snippet HTML e comece a proteger seu site instantaneamente.'
+                        : 'Instala iAlert en menos de 2 minutos con nuestro snippet HTML y empieza a proteger tu sitio web al instante.',
                       color: "text-blue-600",
                       bg: "bg-blue-50"
                     }}
@@ -191,16 +256,20 @@ const MegaMenuNavigation = () => {
 
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-slate-700 hover:text-blue-600">
-                  Casos de Uso
+                  {t.nav.useCases}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="left-0 top-0 w-full data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 md:absolute md:w-auto">
                   <MenuSection 
-                    title="Casos de Uso" 
+                    title={t.useCases.title} 
                     items={useCasesItems} 
                     highlightSection={{
                       icon: Users,
-                      title: "Casos de Éxito",
-                      description: "Descubre cómo empresas como la tuya protegen su contenido y mejoran su ROI con iAlert.",
+                      title: currentLanguage === 'en' ? 'Success Stories' : currentLanguage === 'pt' ? 'Casos de Sucesso' : 'Casos de Éxito',
+                      description: currentLanguage === 'en' 
+                        ? 'Discover how companies like yours protect their content and improve their ROI with iAlert.'
+                        : currentLanguage === 'pt' 
+                        ? 'Descubra como empresas como a sua protegem seu conteúdo e melhoram seu ROI com iAlert.'
+                        : 'Descubre cómo empresas como la tuya protegen su contenido y mejoran su ROI con iAlert.',
                       color: "text-teal-600",
                       bg: "bg-teal-50"
                     }}
@@ -210,16 +279,20 @@ const MegaMenuNavigation = () => {
 
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-slate-700 hover:text-blue-600">
-                  Empresa
+                  {t.nav.company}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="left-0 top-0 w-full data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 md:absolute md:w-auto">
                   <MenuSection 
-                    title="Empresa" 
+                    title={t.company.title} 
                     items={corporateItems} 
                     highlightSection={{
                       icon: Building2,
-                      title: "Soporte Enterprise",
-                      description: "Soluciones personalizadas para grandes organizaciones con soporte 24/7 y SLA garantizado.",
+                      title: currentLanguage === 'en' ? 'Enterprise Support' : currentLanguage === 'pt' ? 'Suporte Enterprise' : 'Soporte Enterprise',
+                      description: currentLanguage === 'en' 
+                        ? 'Custom solutions for large organizations with 24/7 support and guaranteed SLA.'
+                        : currentLanguage === 'pt' 
+                        ? 'Soluções personalizadas para grandes organizações com suporte 24/7 e SLA garantido.'
+                        : 'Soluciones personalizadas para grandes organizaciones con soporte 24/7 y SLA garantizado.',
                       color: "text-amber-600",
                       bg: "bg-amber-50"
                     }}
@@ -229,12 +302,15 @@ const MegaMenuNavigation = () => {
             </NavigationMenuList>
           </NavigationMenu>
           
-          <button 
-            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors"
-            onClick={handleFreeTrial}
-          >
-            Prueba Gratuita
-          </button>
+          <div className="flex items-center space-x-4">
+            <LanguageSwitcher />
+            <button 
+              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+              onClick={handleFreeTrial}
+            >
+              {t.nav.freeTrial}
+            </button>
+          </div>
         </div>
       </div>
     </nav>

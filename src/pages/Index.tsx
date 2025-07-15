@@ -1,7 +1,7 @@
 
 import MegaMenuNavigation from "@/components/MegaMenuNavigation";
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
+import TranslatedHero from "@/components/TranslatedHero";
+import TranslatedFeatures from "@/components/TranslatedFeatures";
 import WhatWeDetect from "@/components/WhatWeDetect";
 import SimplifiedHowItWorks from "@/components/SimplifiedHowItWorks";
 import ImmediateBenefits from "@/components/ImmediateBenefits";
@@ -24,12 +24,12 @@ const Index = () => {
       
       {/* HERO */}
       <div id="hero">
-        <Hero />
+        <TranslatedHero />
       </div>
       
       {/* PRODUCTO */}
       <div id="features">
-        <Features />
+        <TranslatedFeatures />
       </div>
       <div id="how-it-works">
         <SimplifiedHowItWorks />
