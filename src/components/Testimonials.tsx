@@ -1,5 +1,6 @@
 
 import { Star, Quote } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 import { useLanguage } from "@/hooks/useLanguage";
 import { getTranslation } from "@/i18n";
 
@@ -9,44 +10,25 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      name: "Marta Alonso",
-      role: "Directora de Marketing Digital",
-      company: "TechFlow Solutions",
-      case: t.testimonials.trademarkCase,
-      image: "/placeholder.svg",
-      testimonial: "Detectamos que varias IAs estaban usando nuestra marca registrada para generar contenido competidor. AI SHIELD nos alertó inmediatamente y pudimos bloquear estos usos no autorizados, protegiendo nuestra reputación online.",
-      rating: 5,
-      results: "95% reducción en uso no autorizado de marca"
+      name: t.testimonials.client1.name,
+      position: t.testimonials.client1.position,
+      content: t.testimonials.client1.content,
+      company: t.testimonials.client1.company,
+      rating: 5
     },
     {
-      name: "Juan Antonio Méndez",
-      role: "CTO",
-      company: "InnovaManufacturing",
-      case: t.testimonials.industrialCase,
-      image: "/placeholder.svg",
-      testimonial: "Nuestros procesos industriales patentados estaban siendo analizados por crawlers de IA. Con AI SHIELD pudimos crear una zona de licenciamiento específica que nos genera ingresos adicionales mientras protegemos nuestra propiedad intelectual.",
-      rating: 5,
-      results: "€50K anuales en licencias de IA"
+      name: t.testimonials.client2.name,
+      position: t.testimonials.client2.position,
+      content: t.testimonials.client2.content,
+      company: t.testimonials.client2.company,
+      rating: 5
     },
     {
-      name: "Carmen Rivera",
-      role: "Escritora y Guionista",
-      company: "Independent Creator",
-      case: t.testimonials.contentCase,
-      image: "/placeholder.svg",
-      testimonial: "Como creadora de contenido, era crucial proteger mis obras originales. AI SHIELD me permite controlar exactamente qué IAs pueden acceder a mi trabajo y bajo qué términos, monetizando mi contenido de forma justa.",
-      rating: 5,
-      results: "300% aumento en ingresos por licencias"
-    },
-    {
-      name: "Roberto Silva",
-      role: "SEO Manager",
-      company: "Digital Marketing Pro",
-      case: t.testimonials.seoCase,
-      image: "/placeholder.svg",
-      testimonial: "El tráfico de bots estaba distorsionando nuestras métricas de SEO. AI SHIELD nos permite diferenciar claramente entre tráfico humano y de IA, mejorando significativamente nuestros informes y estrategias SEO.",
-      rating: 5,
-      results: "40% mejora en métricas SEO reales"
+      name: t.testimonials.client3.name,
+      position: t.testimonials.client3.position,
+      content: t.testimonials.client3.content,
+      company: t.testimonials.client3.company,
+      rating: 5
     }
   ];
 
@@ -63,44 +45,29 @@ const Testimonials = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300">
-              <div className="flex items-center mb-6">
-                <img 
-                  src={testimonial.image} 
-                  alt={testimonial.name}
-                  className="w-16 h-16 rounded-full bg-slate-200 mr-4"
-                />
-                <div>
-                  <h3 className="text-lg font-bold text-slate-900">{testimonial.name}</h3>
-                  <p className="text-blue-600 font-medium">{testimonial.role}</p>
-                  <p className="text-slate-600">{testimonial.company}</p>
+            <Card key={index} className="border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white relative overflow-hidden">
+              <CardContent className="p-8">
+                <Quote className="h-8 w-8 text-blue-400 mb-4" />
+                
+                <div className="flex items-center mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 text-amber-400 fill-current" />
+                  ))}
                 </div>
-              </div>
-              
-              <div className="mb-4">
-                <span className="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full">
-                  {testimonial.case}
-                </span>
-              </div>
-              
-              <div className="flex items-center mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-amber-400 fill-current" />
-                ))}
-              </div>
-              
-              <Quote className="h-8 w-8 text-blue-200 mb-4" />
-              <p className="text-slate-700 leading-relaxed mb-6 italic">
-                "{testimonial.testimonial}"
-              </p>
-              
-              <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                <div className="text-green-800 font-semibold text-sm">{t.testimonials.result}</div>
-                <div className="text-green-700 font-bold">{testimonial.results}</div>
-              </div>
-            </div>
+                
+                <p className="text-slate-600 mb-6 leading-relaxed italic">
+                  "{testimonial.content}"
+                </p>
+                
+                <div className="border-t border-slate-200 pt-4">
+                  <div className="font-semibold text-slate-900">{testimonial.name}</div>
+                  <div className="text-sm text-slate-600">{testimonial.position}</div>
+                  <div className="text-sm text-blue-600 font-medium">{testimonial.company}</div>
+                </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>

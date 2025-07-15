@@ -1,48 +1,53 @@
 
 import { CheckCircle, Cpu, FileText, Bot, BarChart3, Shield, Feather, Settings } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
+import { getTranslation } from "@/i18n";
 
 const EnhancedBenefits = () => {
+  const { currentLanguage } = useLanguage();
+  const t = getTranslation(currentLanguage);
+
   const problems = [
     {
       icon: Cpu,
-      problem: "Bots consumen tu CPU y ancho de banda",
-      solution: "Activa solo en tráfico IA. No impacta al servidor ni a tus visitantes reales.",
+      problem: t.enhancedBenefits.problems.resourceConsumption.problem,
+      solution: t.enhancedBenefits.problems.resourceConsumption.solution,
       emoji: "💡"
     },
     {
       icon: FileText,
-      problem: "Te copian contenidos para entrenar IAs",
-      solution: "Redirige a página de licenciamiento automático. Protege tu propiedad intelectual.",
+      problem: t.enhancedBenefits.problems.contentCopying.problem,
+      solution: t.enhancedBenefits.problems.contentCopying.solution,
       emoji: "🚫"
     },
     {
       icon: Bot,
-      problem: "Llenan formularios, boicotean productos",
-      solution: "Detecta automatismos sospechosos. Bloquea uso fraudulento de cupones, carritos y campañas.",
+      problem: t.enhancedBenefits.problems.formSpam.problem,
+      solution: t.enhancedBenefits.problems.formSpam.solution,
       emoji: "🛡️"
     },
     {
       icon: BarChart3,
-      problem: "Distorsionan tus métricas de tráfico y reputación",
-      solution: "Panel real‑time que diferencia humano vs IA. Alertas vía email o Slack.",
+      problem: t.enhancedBenefits.problems.distortedMetrics.problem,
+      solution: t.enhancedBenefits.problems.distortedMetrics.solution,
       emoji: "📊"
     },
     {
       icon: Shield,
-      problem: "Usan bots sin JS o evaden detección",
-      solution: "Honeypots HTML y detección sin JS con <noscript>. Caza incluso crawlers invisibles.",
+      problem: t.enhancedBenefits.problems.undetectedBots.problem,
+      solution: t.enhancedBenefits.problems.undetectedBots.solution,
       emoji: "👁️"
     },
     {
       icon: Feather,
-      problem: "Integrar soluciones como DataDome es caro y complejo",
-      solution: "10 líneas de código, sin SDK, sin cookies. Plug & play en cualquier web o CMS.",
+      problem: t.enhancedBenefits.problems.expensiveIntegration.problem,
+      solution: t.enhancedBenefits.problems.expensiveIntegration.solution,
       emoji: "🪶"
     },
     {
       icon: Settings,
-      problem: "Quieres controlar qué IA puede acceder",
-      solution: "Listas blancas por IA, IP o User-Agent. También puedes monetizar el acceso a ciertos modelos.",
+      problem: t.enhancedBenefits.problems.aiControl.problem,
+      solution: t.enhancedBenefits.problems.aiControl.solution,
       emoji: "🎛️"
     }
   ];
@@ -53,12 +58,12 @@ const EnhancedBenefits = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center bg-green-100 border border-green-200 rounded-full px-4 py-2 mb-8">
             <CheckCircle className="h-4 w-4 text-green-600 mr-2" />
-            <span className="text-green-700 text-sm font-medium">Beneficios desde el primer segundo</span>
+            <span className="text-green-700 text-sm font-medium">{t.enhancedBenefits.badge}</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            <span className="text-blue-600">🧩 Problema Resuelto</span>
-            <span className="block mt-2">🧠 Lo que iAlert te permite</span>
+            <span className="text-blue-600">{t.enhancedBenefits.title}</span>
+            <span className="block mt-2">{t.enhancedBenefits.subtitle}</span>
           </h2>
         </div>
         

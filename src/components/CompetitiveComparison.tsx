@@ -1,35 +1,40 @@
 
 import { CheckCircle, XCircle, Rocket } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
+import { getTranslation } from "@/i18n";
 
 const CompetitiveComparison = () => {
+  const { currentLanguage } = useLanguage();
+  const t = getTranslation(currentLanguage);
+
   const features = [
     {
-      name: "Detección de bots sin JS",
+      name: t.comparison.features.noJsDetection,
       iAlert: <CheckCircle className="text-green-500" />,
       alternative: <XCircle className="text-red-500" />
     },
     {
-      name: "Licenciamiento granular por IA",
+      name: t.comparison.features.granularLicensing,
       iAlert: <CheckCircle className="text-green-500" />,
       alternative: <XCircle className="text-red-500" />
     },
     {
-      name: "Integración en 2 minutos",
+      name: t.comparison.features.quickIntegration,
       iAlert: <CheckCircle className="text-green-500" />,
       alternative: <XCircle className="text-red-500" />
     },
     {
-      name: "Alertas proactivas",
+      name: t.comparison.features.proactiveAlerts,
       iAlert: <CheckCircle className="text-green-500" />,
       alternative: <XCircle className="text-red-500" />
     },
     {
-      name: "Planes pay-per-use",
+      name: t.comparison.features.payPerUse,
       iAlert: <CheckCircle className="text-green-500" />,
       alternative: <XCircle className="text-red-500" />
     },
     {
-      name: "Soporte prioritario",
+      name: t.comparison.features.prioritySupport,
       iAlert: <CheckCircle className="text-green-500" />,
       alternative: <XCircle className="text-red-500" />
     }
@@ -40,12 +45,11 @@ const CompetitiveComparison = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            iAlert
-            <span className="block text-blue-600">vs. Alternativas</span>
+            {t.comparison.title}
+            <span className="block text-blue-600">{t.comparison.subtitle}</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Compara nuestras características con las de la competencia y descubre 
-            por qué somos la mejor opción para proteger tu contenido.
+            {t.comparison.description}
           </p>
         </div>
         
@@ -54,13 +58,13 @@ const CompetitiveComparison = () => {
             <thead className="bg-slate-50">
               <tr>
                 <th className="px-6 py-4 text-left text-sm font-bold text-slate-900 uppercase tracking-wider border-b border-slate-200">
-                  Característica
+                  {t.comparison.tableHeaders.feature}
                 </th>
                 <th className="px-6 py-4 text-center text-sm font-bold text-slate-900 uppercase tracking-wider border-b border-slate-200">
-                  iAlert
+                  {t.comparison.tableHeaders.iAlert}
                 </th>
                 <th className="px-6 py-4 text-center text-sm font-bold text-slate-900 uppercase tracking-wider border-b border-slate-200">
-                  Alternativa Típica
+                  {t.comparison.tableHeaders.alternative}
                 </th>
               </tr>
             </thead>
@@ -79,7 +83,7 @@ const CompetitiveComparison = () => {
         <div className="mt-12 text-center">
           <Rocket className="h-8 w-8 text-blue-600 mx-auto mb-4 animate-bounce" />
           <p className="text-xl text-slate-600">
-            ¡Únete a la revolución de la protección IA!
+            {t.comparison.callToAction}
           </p>
         </div>
       </div>

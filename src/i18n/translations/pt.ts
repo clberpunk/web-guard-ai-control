@@ -1,357 +1,244 @@
 
 export const pt = {
-  // Navigation
   nav: {
     product: "Produto",
     useCases: "Casos de Uso",
     company: "Empresa",
     freeTrial: "Teste Grátis"
   },
-  
-  // Product Menu
   product: {
-    title: "Produto",
     features: "Características",
-    featuresDesc: "Funcionalidades principais",
+    featuresDesc: "Descubra todas as funcionalidades",
     howItWorks: "Como Funciona",
-    howItWorksDesc: "Processo em 3 passos",
+    howItWorksDesc: "Processo simples em 3 etapas",
     benefits: "Benefícios",
-    benefitsDesc: "Vantagens imediatas",
-    dashboard: "Dashboard",
-    dashboardDesc: "Painel de controle"
+    benefitsDesc: "Vantagens imediatas para seu negócio",
+    dashboard: "Painel de Controle",
+    dashboardDesc: "Gestão centralizada e intuitiva"
   },
-  
-  // Use Cases Menu
   useCases: {
-    title: "Casos de Uso",
-    whatWeDo: "O Que Fazemos",
-    whatWeDoDesc: "Detecção e bloqueio",
+    whatWeDo: "O Que Detectamos",
+    whatWeDoDesc: "Tipos de ameaças que identificamos",
     sectors: "Setores",
-    sectorsDesc: "Indústrias compatíveis",
+    sectorsDesc: "Indústrias que podem se beneficiar",
     testimonials: "Depoimentos",
-    testimonialsDesc: "Casos de sucesso",
+    testimonialsDesc: "O que dizem nossos clientes",
     comparison: "Comparação",
-    comparisonDesc: "Vs concorrência",
-    enhancedBenefits: "Casos de Uso",
-    enhancedBenefitsDesc: "Problemas resolvidos"
+    comparisonDesc: "iAlert vs alternativas",
+    enhancedBenefits: "Benefícios Avançados",
+    enhancedBenefitsDesc: "Soluções completas para problemas reais"
   },
-  
-  // Company Menu
   company: {
-    title: "Empresa",
     pricing: "Preços",
-    pricingDesc: "Planos e tarifas",
+    pricingDesc: "Planos adaptados ao seu negócio",
     security: "Segurança",
-    securityDesc: "Privacidade e compliance",
+    securityDesc: "Privacidade e conformidade regulatória",
     contact: "Contato",
-    contactDesc: "Entre em contato",
+    contactDesc: "Entre em contato conosco",
     documentation: "Documentação",
-    documentationDesc: "Guias técnicos",
-    stats: "Impacto Global",
-    statsDesc: "Estatísticas de uso"
+    documentationDesc: "Guias técnicos e API",
+    stats: "Estatísticas",
+    statsDesc: "Números que comprovam nossa eficácia"
   },
-  
-  // Hero Section
   hero: {
     title: "Proteja seu conteúdo digital",
-    subtitle: "de inteligências artificiais não autorizadas",
-    description: "A primeira plataforma que detecta e controla o acesso de IAs ao seu site. Proteja sua propriedade intelectual e otimize recursos.",
+    subtitle: "da IA não autorizada",
+    description: "A primeira plataforma que detecta e bloqueia bots de IA que consomem seus recursos, copiam seu conteúdo e distorcem suas métricas sem permissão.",
     startNow: "Começar Agora",
-    freeTrial: "Teste Grátis"
+    freeTrial: "Teste Gratuito"
   },
-  
-  // Features
   features: {
     title: "Proteja seu conteúdo digital",
     subtitle: "sem complicações",
     description: "Nem todas as IAs estão aqui para ajudar. Quando visitam seu site, analisam seu negócio, copiam seus produtos e usam seu conteúdo sem consentimento.",
     instantInstall: "Instalação Instantânea",
-    instantInstallDesc: "Clique, cole e pronto. Sem software ou plugins adicionais em qualquer ambiente web.",
-    totalControl: "Controle Total de IAs",
-    totalControlDesc: "Bloqueie ou permita as IAs que desejar do seu painel de controle. Gere relatórios completos.",
+    instantInstallDesc: "Clique, cole e pronto. Sem software ou plugins adicionais necessários em qualquer ambiente web.",
+    totalControl: "Controle Total de IA",
+    totalControlDesc: "Bloqueie ou permita as IAs que quiser do seu painel de controle. Gere relatórios completos.",
     advancedAnalysis: "Análise Avançada",
-    advancedAnalysisDesc: "Detecte visitas artificiais e decida como elas se comportam no seu site. Otimize seu SEO para IAs.",
+    advancedAnalysisDesc: "Detecte visitas artificiais e decida como elas se comportam em seu site. Otimize seu SEO para IAs.",
     securityAlerts: "Alertas de Segurança",
-    securityAlertsDesc: "Receba notificações por anomalias e atividade suspeita em tempo real.",
+    securityAlertsDesc: "Receba notificações sobre anomalias e atividades suspeitas em tempo real.",
     noTechnicalImpact: "Sem Impacto Técnico",
     noTechnicalImpactDesc: "Não afeta SEO, SEM, analytics ou experiência do usuário. Apenas 5KB de código.",
     collaborativeManagement: "Gestão Colaborativa",
     collaborativeManagementDesc: "Múltiplos usuários no painel de controle com diferentes níveis de acesso."
   },
-  
-  // What We Detect
   whatWeDetect: {
-    title: "O que detectamos e protegemos?",
-    subtitle: "Identificação completa de ameaças IA",
+    title: "Que tipos de IA detectamos e controlamos?",
+    subtitle: "Nossa tecnologia identifica e classifica diferentes tipos de bots de IA para que você possa decidir como lidar com cada um.",
     knownAi: "IAs Conhecidas",
-    knownAiDesc: "GPT, Claude, Bard e mais de 50 modelos identificados",
+    knownAiDesc: "GPT, Claude, Bard, Perplexity e outros modelos identificados que você pode permitir ou bloquear seletivamente.",
     unknownBots: "Bots Desconhecidos",
-    unknownBotsDesc: "Sistemas de machine learning não identificados anteriormente",
-    scrapers: "Web Scrapers",
-    scrapersDesc: "Ferramentas automáticas de extração de conteúdo",
-    crawlers: "Crawlers Maliciosos",
-    crawlersDesc: "Bots que ignoram robots.txt e políticas do site"
+    unknownBotsDesc: "Novos crawlers e bots emergentes que ainda não estão catalogados, mas mostram comportamento suspeito.",
+    scrapers: "Scrapers Agressivos",
+    scrapersDesc: "Bots que extraem conteúdo massivamente sem respeitar robots.txt ou limites de velocidade.",
+    crawlers: "Crawlers Personalizados",
+    crawlersDesc: "Bots corporativos e acadêmicos que podem estar coletando dados para treinar modelos proprietários."
   },
-  
-  // How It Works
   howItWorks: {
-    title: "Assim de",
+    title: "Assim",
     subtitle: "Simples",
-    description: "Três passos simples para proteger completamente seu site",
+    description: "Três etapas simples para proteger completamente seu site",
     installation: "Instalação",
     installationDesc: "Adicione um snippet HTML único ao seu site. 🚀",
     detection: "Detecção",
     detectionDesc: "AI SHIELD detecta bots com JS, bots sem JS e distingue IAs amigas.",
     defense: "Defesa",
-    defenseDesc: "Bloqueia, desafia ou licencia em tempo real conforme suas regras."
+    defenseDesc: "Bloqueie, desafie ou licencie em tempo real de acordo com suas regras."
   },
-  
-  // Immediate Benefits
   immediateBenefits: {
-    title: "🧩 O que seu negócio ganha",
+    title: "O que seu negócio ganha",
     subtitle: "com AI SHIELD?",
     description: "Benefícios imediatos desde o primeiro dia de implementação",
-    saveResources: "Economiza recursos",
-    saveResourcesDesc: "Reduz o tráfego de IA que esgota CPU, RAM e largura de banda dos seus servidores.",
-    avoidFraud: "Evita fraudes",
-    avoidFraudDesc: "Bloqueia bots que abusam de formulários, descontos ou manipulam métricas.",
-    protectContent: "Protege seu conteúdo",
-    protectContentDesc: "Impede que modelos LLM copiem seu site para treinar sem permissão.",
+    saveResources: "Economize recursos",
+    saveResourcesDesc: "Reduza o tráfego de IA que esgota CPU, RAM e largura de banda de seus servidores.",
+    avoidFraud: "Evite fraudes",
+    avoidFraudDesc: "Bloqueie bots que abusam de formulários, descontos ou manipulam métricas.",
+    protectContent: "Proteja seu conteúdo",
+    protectContentDesc: "Impeça que modelos LLM copiem seu site para treinar sem permissão.",
     onlyHumans: "Apenas humanos",
-    onlyHumansDesc: "Ativa filtros invisíveis para garantir que quem entra... é real."
+    onlyHumansDesc: "Ative filtros invisíveis para garantir que quem entra... é real."
   },
-
-  // Dashboard
   dashboard: {
-    title: "Painel de Controle Inteligente",
-    subtitle: "para a era da IA",
-    description: "Gerencie completamente o acesso de inteligências artificiais ao seu site através de uma interface intuitiva e poderosa.",
+    title: "Painel de controle",
+    subtitle: "intuitivo e poderoso",
+    description: "Gerencie toda a atividade de IA a partir de um dashboard centralizado",
     realTimeMonitoring: "Monitoramento em Tempo Real",
-    realTimeMonitoringDesc: "Visualize todas as visitas de IA ao vivo",
+    realTimeMonitoringDesc: "Visualize a atividade de bots e IA em seu site instantaneamente.",
     aiDatabase: "Base de Dados de IA",
-    aiDatabaseDesc: "Mais de 200 modelos identificados e atualizados",
+    aiDatabaseDesc: "Acesso à nossa extensa base de dados de bots de IA conhecidos e emergentes.",
     customRules: "Regras Personalizadas",
-    customRulesDesc: "Defina comportamentos específicos por IA",
+    customRulesDesc: "Configure regras específicas para diferentes tipos de bots de acordo com suas necessidades.",
     detailedReports: "Relatórios Detalhados",
-    detailedReportsDesc: "Análise completa de atividade e bloqueios",
+    detailedReportsDesc: "Gere relatórios completos sobre a atividade de bots e seu impacto em seu site.",
     apiIntegration: "Integração API",
-    apiIntegrationDesc: "Conecte com seus sistemas existentes",
+    apiIntegrationDesc: "Conecte-se com suas ferramentas existentes através de nossa API robusta.",
     alertSystem: "Sistema de Alertas",
-    alertSystemDesc: "Notificações instantâneas de ameaças"
+    alertSystemDesc: "Receba notificações instantâneas sobre atividade suspeita ou padrões anômalos."
   },
-
-  // Industry Sectors
   industrySectors: {
-    title: "Setores que confiam",
-    subtitle: "no AI SHIELD",
-    description: "Empresas de múltiplas indústrias já protegem seu conteúdo digital com nossa tecnologia",
+    title: "Adaptabilidade a",
+    subtitle: "Setores-Chave",
+    description: "Nossas ferramentas são projetadas para atender às necessidades específicas de cada setor, com opções de personalização e suporte dedicado.",
     ecommerce: "E-commerce",
-    ecommerceDesc: "Proteja catálogos de produtos e preços da competição de IA",
-    media: "Mídia e Conteúdo",
-    mediaDesc: "Proteja artigos, vídeos e conteúdo original de scraping não autorizado",
-    saas: "SaaS e Tech",
-    saasDesc: "Controle o acesso de IA à documentação técnica e APIs",
-    finance: "Finanças",
-    financeDesc: "Proteja informações sensíveis e relatórios financeiros",
+    ecommerceDesc: "Proteja catálogos de produtos, preços e estratégias comerciais do scraping não autorizado.",
+    media: "Mídia e Comunicação",
+    mediaDesc: "Proteja conteúdo editorial, artigos exclusivos e material jornalístico valioso.",
+    saas: "SaaS e Tecnologia",
+    saasDesc: "Proteja documentação técnica, código-fonte e recursos de desenvolvimento.",
+    finance: "Serviços Financeiros",
+    financeDesc: "Proteja informações financeiras sensíveis e dados de mercado confidenciais.",
     education: "Educação",
-    educationDesc: "Controle o uso de material educacional por modelos de IA",
+    educationDesc: "Proteja material educacional, pesquisa acadêmica e conteúdo de cursos.",
     healthcare: "Saúde",
-    healthcareDesc: "Cumpra regulamentações de privacidade em dados médicos"
+    healthcareDesc: "Proteja informações médicas, pesquisa clínica e dados de pacientes."
   },
-
-  // Testimonials
-  testimonials: {
-    title: "Histórias de sucesso reais",
-    subtitle: "de nossos clientes",
-    description: "Descubra como empresas de diferentes setores protegeram e monetizaram seu conteúdo digital com AI SHIELD.",
-    trademarkCase: "Personificação de Marca e Danos Reputacionais",
-    industrialCase: "Proteção de Processos Industriais e Patentes",
-    contentCase: "Escritor, Tradutor e Roteirista: Proteção de Conteúdo",
-    seoCase: "Agência de Marketing: Melhoria de SEO",
-    result: "Resultado:"
-  },
-
-  // Competitive Comparison
-  competitiveComparison: {
-    title: "Por que escolher AI SHIELD",
-    subtitle: "em vez da concorrência?",
-    description: "Comparação detalhada com as principais alternativas do mercado",
-    aiShield: "AI SHIELD",
-    traditional: "Soluções Tradicionais",
-    cloudflare: "Cloudflare Bot Management",
-    aiDetection: "Detecção Específica de IA",
-    aiDetectionYes: "Mais de 200 modelos identificados",
-    aiDetectionNo: "Apenas bots genéricos",
-    installation: "Instalação",
-    installationEasy: "2 linhas de código HTML",
-    installationComplex: "Configuração complexa",
-    pricing: "Preço",
-    pricingAffordable: "A partir de €29/mês",
-    pricingExpensive: "A partir de €200/mês",
-    falsePositives: "Falsos Positivos",
-    falsePositivesLow: "Menos de 0,1%",
-    falsePositivesHigh: "5-15% típico",
-    realTimeControl: "Controle em Tempo Real",
-    customRules: "Regras Personalizadas",
-    aiLicensing: "Licenciamento de IA",
-    support: "Suporte Especializado"
-  },
-
-  // Enhanced Benefits
-  enhancedBenefits: {
-    title: "Casos de Uso Específicos",
-    subtitle: "Que problemas resolvemos?",
-    description: "Soluções concretas para os desafios mais comuns que as empresas enfrentam com IA",
-    contentTheft: "Roubo de Conteúdo",
-    contentTheftDesc: "Impede que modelos LLM copiem seu conteúdo para treinamento sem compensação",
-    competitiveAdvantage: "Vantagem Competitiva",
-    competitiveAdvantageDesc: "Evite que concorrentes usem IA para analisar suas estratégias e preços",
-    serverOverload: "Sobrecarga de Servidores",
-    serverOverloadDesc: "Reduza até 60% do tráfego não humano que consome recursos desnecessariamente",
-    seoDistortion: "Distorção de Métricas",
-    seoDistortionDesc: "Obtenha métricas SEO e analíticas reais sem ruído de bots de IA",
-    brandProtection: "Proteção de Marca",
-    brandProtectionDesc: "Controle como as IAs representam sua marca em suas respostas",
-    aiMonetization: "Monetização de IA",
-    aiMonetizationDesc: "Gere receita adicional licenciando seu conteúdo para modelos de IA"
-  },
-
-  // Pricing
-  pricing: {
-    title: "Planos projetados",
-    subtitle: "para cada necessidade",
-    description: "De startups a grandes corporações, temos o plano perfeito para proteger seu conteúdo digital",
-    starter: "Starter",
-    starterDesc: "Perfeito para sites pequenos e startups",
-    professional: "Professional",
-    professionalDesc: "Ideal para empresas em crescimento",
-    enterprise: "Enterprise",
-    enterpriseDesc: "Para grandes corporações e casos complexos",
-    month: "/mês",
-    getStarted: "Começar",
-    contactSales: "Contatar Vendas",
-    pageviews: "pageviews/mês",
-    aiModels: "modelos de IA detectados",
-    customRules: "regras personalizadas",
-    support: "Suporte por email",
-    prioritySupport: "Suporte prioritário",
-    dedicatedSupport: "Suporte dedicado",
-    basicReports: "Relatórios básicos",
-    advancedReports: "Relatórios avançados",
-    customReports: "Relatórios personalizados",
-    apiAccess: "Acesso à API",
-    whiteLabel: "White-label",
-    sla: "SLA 99,9%"
-  },
-
-  // Security Privacy
-  securityPrivacy: {
-    title: "Segurança e Privacidade",
-    subtitle: "por design",
-    description: "Cumprimos com os mais altos padrões de segurança e privacidade para proteger seu negócio e o de seus usuários",
-    gdprCompliant: "Conforme GDPR",
-    gdprCompliantDesc: "Totalmente compatível com o Regulamento Geral de Proteção de Dados europeu",
-    zeroDataCollection: "Coleta Zero de Dados",
-    zeroDataCollectionDesc: "Não coletamos nem armazenamos dados pessoais de seus visitantes",
-    encryptedTransmission: "Transmissão Criptografada",
-    encryptedTransmissionDesc: "Toda comunicação é feita através de TLS 1.3 e criptografia end-to-end",
-    isolatedProcessing: "Processamento Isolado",
-    isolatedProcessingDesc: "Cada cliente opera em um ambiente completamente isolado e seguro",
-    regularAudits: "Auditorias Regulares",
-    regularAuditsDesc: "Auditorias de segurança trimestrais por terceiros certificados",
-    dataResidency: "Residência de Dados",
-    dataResidencyDesc: "Seus dados permanecem na jurisdição que você escolher (EU, US, APAC)"
-  },
-
-  // Contact Form
-  contactForm: {
-    title: "Tem perguntas?",
-    subtitle: "Vamos conversar",
-    description: "Nossa equipe está pronta para ajudá-lo a proteger seu conteúdo digital. Entre em contato e responderemos em menos de 24 horas.",
-    name: "Nome completo",
-    email: "Email corporativo",
-    company: "Empresa",
-    website: "Site",
-    message: "Conte-nos sobre seu caso de uso",
-    send: "Enviar mensagem",
-    sending: "Enviando...",
-    nameRequired: "Nome é obrigatório",
-    emailRequired: "Email é obrigatório",
-    emailInvalid: "Email inválido",
-    companyRequired: "Empresa é obrigatória",
-    messageRequired: "Mensagem é obrigatória",
-    success: "Mensagem enviada com sucesso!",
-    error: "Erro ao enviar mensagem"
-  },
-
-  // Technical Docs
-  technicalDocs: {
-    title: "Documentação Técnica",
-    subtitle: "e Recursos",
-    description: "Acesse toda a documentação técnica, whitepapers e recursos necessários para implementar AI SHIELD em sua infraestrutura.",
-    downloads: "Downloads Disponíveis",
-    onlineResources: "Recursos Online",
-    quickStart: "Instalação Rápida",
-    quickStartDesc: "Apenas 2 linhas de código para começar a proteger seu site.",
-    technicalDoc: "Documentação Técnica Completa",
-    technicalDocDesc: "Guia completo de implementação e configuração do AI SHIELD",
-    apiGuide: "Guia de Integração API",
-    apiGuideDesc: "Documentação de nossa API REST e exemplos de código",
-    whitepaper: "Whitepaper: Detecção de IA",
-    whitepaperDesc: "Paper técnico sobre nossos algoritmos de detecção",
-    useCasesDoc: "Casos de Uso Empresariais",
-    useCasesDocDesc: "Estudos de caso detalhados e melhores práticas",
-    devCenter: "Centro de Desenvolvedores",
-    devCenterDesc: "Documentação online, exemplos e tutoriais",
-    githubCommunity: "Comunidade GitHub",
-    githubCommunityDesc: "Código fonte de exemplos e bibliotecas oficiais",
-    techBlog: "Blog Técnico",
-    techBlogDesc: "Artigos técnicos e atualizações do produto",
-    download: "Baixar",
-    access: "Acessar"
-  },
-
-  // Global Stats
   globalStats: {
-    title: "Protegendo o futuro digital",
-    subtitle: "desde 2023",
-    description: "Milhares de empresas já confiam em nossa tecnologia para proteger seu conteúdo digital de inteligências artificiais não autorizadas.",
+    title: "Números que falam",
+    subtitle: "por si só",
+    description: "Milhares de empresas confiam em nossa plataforma para proteger seu conteúdo digital de ameaças de IA.",
     websitesProtected: "Sites Protegidos",
-    websitesProtectedDesc: "Desde nosso lançamento",
-    threatsBlocked: "Ameaças de IA Bloqueadas",
-    threatsBlockedDesc: "Nos últimos 30 dias",
+    websitesProtectedDesc: "Empresas de todos os tamanhos confiam em nossa proteção",
+    threatsBlocked: "Ameaças Bloqueadas",
+    threatsBlockedDesc: "Tentativas de acesso não autorizado bloqueadas este mês",
     companiesTrusting: "Empresas Confiando",
-    companiesTrustingDesc: "Em nossa plataforma",
-    uptimeGuaranteed: "Uptime Garantido",
-    uptimeGuaranteedDesc: "Disponibilidade do serviço"
+    companiesTrustingDesc: "Organizações que implementaram nossa solução",
+    uptimeGuaranteed: "Tempo de Atividade",
+    uptimeGuaranteedDesc: "Disponibilidade garantida de nossos serviços"
   },
-
-  // Footer
-  footer: {
-    product: "Produto",
-    features: "Características",
-    howItWorks: "Como funciona",
-    pricing: "Preços",
-    company: "Empresa",
-    about: "Sobre",
-    blog: "Blog",
-    careers: "Carreiras",
-    contact: "Contato",
-    resources: "Recursos",
-    documentation: "Documentação",
+  testimonials: {
+    title: "O que dizem",
+    subtitle: "nossos clientes",
+    description: "Empresas em todo o mundo confiam no iAlert para proteger seu conteúdo digital.",
+    client1: {
+      name: "Maria González",
+      position: "CTO da TechCorp",
+      content: "O iAlert nos permitiu identificar e bloquear bots maliciosos que estavam consumindo nossos recursos. A implementação foi incrivelmente simples.",
+      company: "TechCorp"
+    },
+    client2: {
+      name: "Carlos Mendoza",
+      position: "Diretor de Marketing na MediaPlus",
+      content: "Desde que usamos o iAlert, reduzimos significativamente o tráfego de bots indesejados. Nossos servidores funcionam muito melhor.",
+      company: "MediaPlus"
+    },
+    client3: {
+      name: "Ana Rodriguez",
+      position: "Fundadora da EduOnline",
+      content: "Proteger nosso conteúdo educacional é crucial. O iAlert nos dá tranquilidade sabendo que nosso material está seguro.",
+      company: "EduOnline"
+    }
+  },
+  technicalDocs: {
+    title: "Documentação",
+    subtitle: "Técnica Completa",
+    description: "Tudo o que você precisa para integrar e aproveitar ao máximo o iAlert em sua infraestrutura.",
+    quickStart: "Início Rápido",
+    quickStartDesc: "Guia passo a passo para implementar o iAlert em menos de 10 minutos em qualquer site.",
     apiReference: "Referência da API",
-    support: "Suporte",
-    community: "Comunidade",
-    legal: "Legal",
-    privacy: "Privacidade",
-    terms: "Termos",
-    cookies: "Cookies",
-    gdpr: "GDPR",
-    followUs: "Siga-nos",
-    newsletter: "Newsletter",
-    newsletterDesc: "Receba as últimas notícias sobre IA e segurança digital",
-    subscribe: "Inscrever-se",
-    enterEmail: "Digite seu email",
-    allRightsReserved: "Todos os direitos reservados."
+    apiReferenceDesc: "Documentação completa de nossa API REST para integrações avançadas e automação.",
+    integrationGuides: "Guias de Integração",
+    integrationGuidesDesc: "Tutoriais específicos para WordPress, Shopify, React, Vue e outras plataformas populares.",
+    bestPractices: "Melhores Práticas",
+    bestPracticesDesc: "Recomendações de especialistas para otimizar a configuração de acordo com seu tipo de negócio.",
+    troubleshooting: "Solução de Problemas",
+    troubleshootingDesc: "Soluções para os problemas mais comuns e contato direto com suporte técnico.",
+    sdkLibraries: "SDKs e Bibliotecas",
+    sdkLibrariesDesc: "Ferramentas de desenvolvimento para JavaScript, Python, PHP e outras linguagens principais."
+  },
+  comparison: {
+    title: "iAlert",
+    subtitle: "vs. Alternativas",
+    description: "Compare nossos recursos com a concorrência e descubra por que somos a melhor opção para proteger seu conteúdo.",
+    tableHeaders: {
+      feature: "Recurso",
+      iAlert: "iAlert",
+      alternative: "Alternativa Típica"
+    },
+    features: {
+      noJsDetection: "Detecção de bots sem JS",
+      granularLicensing: "Licenciamento granular por IA",
+      quickIntegration: "Integração em 2 minutos",
+      proactiveAlerts: "Alertas proativos",
+      payPerUse: "Planos pay-per-use",
+      prioritySupport: "Suporte prioritário"
+    },
+    callToAction: "Junte-se à revolução da proteção de IA!"
+  },
+  enhancedBenefits: {
+    badge: "Benefícios desde o primeiro segundo",
+    title: "🧩 Problema Resolvido",
+    subtitle: "🧠 O que o iAlert permite",
+    problems: {
+      resourceConsumption: {
+        problem: "Bots consomem sua CPU e largura de banda",
+        solution: "Ativa apenas no tráfego de IA. Não impacta o servidor nem seus visitantes reais."
+      },
+      contentCopying: {
+        problem: "Copiam seu conteúdo para treinar IAs",
+        solution: "Redireciona para página de licenciamento automático. Protege sua propriedade intelectual."
+      },
+      formSpam: {
+        problem: "Preenchem formulários, boicotam produtos",
+        solution: "Detecta automatismos suspeitos. Bloqueia uso fraudulento de cupons, carrinhos e campanhas."
+      },
+      distortedMetrics: {
+        problem: "Distorcem suas métricas de tráfego e reputação",
+        solution: "Painel em tempo real que diferencia humano vs IA. Alertas via email ou Slack."
+      },
+      undetectedBots: {
+        problem: "Usam bots sem JS ou burlam detecção",
+        solution: "Honeypots HTML e detecção sem JS com <noscript>. Caça até crawlers invisíveis."
+      },
+      expensiveIntegration: {
+        problem: "Integrar soluções como DataDome é caro e complexo",
+        solution: "10 linhas de código, sem SDK, sem cookies. Plug & play em qualquer site ou CMS."
+      },
+      aiControl: {
+        problem: "Você quer controlar qual IA pode acessar",
+        solution: "Listas brancas por IA, IP ou User-Agent. Você também pode monetizar o acesso a certos modelos."
+      }
+    }
   }
 };
