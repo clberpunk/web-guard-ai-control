@@ -57,7 +57,16 @@ export const pt = {
     subtitle: "de inteligências artificiais não autorizadas",
     description: "A primeira plataforma que detecta e controla o acesso de IAs ao seu site. Proteja sua propriedade intelectual e otimize recursos.",
     startNow: "Começar Agora",
-    freeTrial: "Teste Grátis"
+    freeTrial: "Teste Grátis",
+    peopleHasRights: "People has rights,",
+    aiFollowRules: "AI follow rules.",
+    limitAiUsage: "Limite o uso que a IA faz do seu site aplicando seus termos e condições.",
+    protectControlMonetize: "Proteja, controle e monetize seu conteúdo digital contra IAs fraudulentas.",
+    seeDemo: "Ver Demo",
+    installation: "Instalação",
+    pluginsNeeded: "Plugins necessários",
+    daysGuarantee: "Dias de garantia",
+    protectionLabel: "Proteção IA Empresarial"
   },
   
   // Features
@@ -77,6 +86,20 @@ export const pt = {
     noTechnicalImpactDesc: "Não afeta SEO, SEM, analytics ou experiência do usuário. Apenas 5KB de código.",
     collaborativeManagement: "Gestão Colaborativa",
     collaborativeManagementDesc: "Múltiplos usuários no painel de controle com diferentes níveis de acesso."
+  },
+  
+  // What We Detect
+  whatWeDetect: {
+    title: "O que detectamos e protegemos?",
+    subtitle: "Identificação completa de ameaças IA",
+    knownAi: "IAs Conhecidas",
+    knownAiDesc: "GPT, Claude, Bard e mais de 50 modelos identificados",
+    unknownBots: "Bots Desconhecidos",
+    unknownBotsDesc: "Sistemas de machine learning não identificados anteriormente",
+    scrapers: "Web Scrapers",
+    scrapersDesc: "Ferramentas automáticas de extração de conteúdo",
+    crawlers: "Crawlers Maliciosos",
+    crawlersDesc: "Bots que ignoram robots.txt e políticas do site"
   },
   
   // How It Works
@@ -107,6 +130,28 @@ export const pt = {
     onlyHumansDesc: "Ativa filtros invisíveis para garantir que quem entra... é real."
   },
   
+  // Dashboard
+  dashboard: {
+    title: "Painel de Controle",
+    subtitle: "Intuitivo",
+    description: "Gerencie todas as IAs de uma interface clara e poderosa",
+    realTimeMonitoring: "Monitoramento em Tempo Real",
+    realTimeMonitoringDesc: "Visualize atividade de IA ao vivo com métricas detalhadas",
+    aiManagement: "Gestão de IA",
+    aiManagementDesc: "Configure políticas específicas para cada tipo de IA",
+    detailedReports: "Relatórios Detalhados",
+    detailedReportsDesc: "Exporte dados e analise padrões de comportamento",
+    controlPanel: "Controle de IAs",
+    active: "Ativo",
+    aiDetected: "IAs Detectadas",
+    blocked: "Bloqueadas",
+    allowed: "Permitidas",
+    blocked_status: "Bloqueada",
+    allowed_status: "Permitida",
+    reviewing: "Analisando",
+    limited: "Limitada"
+  },
+  
   // Industry Sectors
   industrySectors: {
     title: "Adaptabilidade a",
@@ -124,6 +169,22 @@ export const pt = {
     pharmaBiotechDesc: "Salvaguarda de pesquisa médica",
     publicSector: "Setor Público",
     publicSectorDesc: "Proteção institucional para governos e ONGs"
+  },
+  
+  // Testimonials
+  testimonials: {
+    title: "O que dizem",
+    subtitle: "nossos clientes",
+    description: "Casos de sucesso reais de empresas que já protegem seu conteúdo",
+    testimonial1: "Reduzimos o tráfego de bots em 75% sem afetar nosso SEO. iAlert é uma ferramenta essencial.",
+    testimonial1Author: "Maria Gonzalez",
+    testimonial1Role: "CTO, TechStartup",
+    testimonial2: "Protegemos nosso conteúdo editorial enquanto permitimos que buscadores legítimos nos indexem.",
+    testimonial2Author: "Carlos Ruiz",
+    testimonial2Role: "Diretor Digital, Jornal Nacional",
+    testimonial3: "A instalação levou 2 minutos. Em uma semana já havíamos bloqueado mais de 500 tentativas de scraping.",
+    testimonial3Author: "Ana Morales",
+    testimonial3Role: "Gerente de TI, E-commerce"
   },
   
   // Enhanced Benefits
@@ -144,6 +205,38 @@ export const pt = {
     solution6: "10 linhas de código, sem SDK, sem cookies. Plug & play em qualquer web ou CMS.",
     problem7: "Quer controlar qual IA pode acessar",
     solution7: "Listas brancas por IA, IP ou User-Agent. Também pode monetizar o acesso a certos modelos."
+  },
+  
+  // Pricing
+  pricing: {
+    title: "Preços que se adaptam",
+    subtitle: "ao seu negócio",
+    description: "Planos flexíveis para empresas de todos os tamanhos",
+    starter: "Starter",
+    starterPrice: "Grátis",
+    starterDesc: "Perfeito para sites pequenos e testes",
+    starterFeature1: "Até 10.000 visitas/mês",
+    starterFeature2: "Detecção básica de IA",
+    starterFeature3: "Painel de controle",
+    starterFeature4: "Suporte por email",
+    professional: "Professional",
+    professionalPrice: "€29",
+    professionalPriceDesc: "/mês",
+    professionalDesc: "Ideal para empresas em crescimento",
+    professionalFeature1: "Até 100.000 visitas/mês",
+    professionalFeature2: "Detecção avançada + alertas",
+    professionalFeature3: "Configuração granular",
+    professionalFeature4: "Suporte prioritário",
+    enterprise: "Enterprise",
+    enterprisePrice: "Personalizado",
+    enterpriseDesc: "Soluções sob medida para grandes organizações",
+    enterpriseFeature1: "Visitas ilimitadas",
+    enterpriseFeature2: "SLA garantido",
+    enterpriseFeature3: "Integração personalizada",
+    enterpriseFeature4: "Suporte 24/7",
+    getStarted: "Começar",
+    contactSales: "Contatar vendas",
+    mostPopular: "Mais popular"
   },
   
   // Competitive Comparison
@@ -177,6 +270,43 @@ export const pt = {
     certificationsTitle: "Certificações e Padrões"
   },
   
+  // Contact
+  contact: {
+    title: "Precisa de ajuda?",
+    subtitle: "Entre em contato",
+    description: "Nossa equipe está aqui para ajudar você a proteger seu conteúdo digital",
+    name: "Nome",
+    email: "Email",
+    company: "Empresa",
+    message: "Mensagem",
+    send: "Enviar mensagem",
+    businessHours: "Horário comercial",
+    businessHoursDesc: "Segunda a sexta, 9:00 - 18:00 CET",
+    responseTime: "Tempo de resposta",
+    responseTimeDesc: "< 24 horas em dias úteis",
+    technicalSupport: "Suporte técnico",
+    technicalSupportDesc: "Ajuda com integração e configuração"
+  },
+  
+  // Technical Docs
+  technicalDocs: {
+    title: "Documentação",
+    subtitle: "Técnica",
+    description: "Guias completos para desenvolvedores e implementadores",
+    quickStart: "Início Rápido",
+    quickStartDesc: "Integre o iAlert em menos de 5 minutos",
+    apiReference: "Referência da API",
+    apiReferenceDesc: "Documentação completa de endpoints",
+    integrationGuides: "Guias de Integração",
+    integrationGuidesDesc: "WordPress, Shopify, React e mais",
+    troubleshooting: "Solução de Problemas",
+    troubleshootingDesc: "Problemas comuns e suas soluções",
+    examples: "Exemplos de Código",
+    examplesDesc: "Implementações reais para diferentes plataformas",
+    webhooks: "Webhooks",
+    webhooksDesc: "Receba notificações em tempo real"
+  },
+  
   // Global Stats
   globalStats: {
     title: "Protegendo o futuro digital",
@@ -190,6 +320,35 @@ export const pt = {
     trustingCompaniesDesc: "Em nossa plataforma",
     guaranteedUptime: "Uptime Garantido",
     guaranteedUptimeDesc: "Disponibilidade do serviço"
+  },
+  
+  // Footer
+  footer: {
+    product: "Produto",
+    features: "Características",
+    howItWorks: "Como funciona",
+    pricing: "Preços",
+    useCases: "Casos de uso",
+    industries: "Indústrias",
+    testimonials: "Depoimentos",
+    comparison: "Comparação",
+    company: "Empresa",
+    about: "Sobre",
+    blog: "Blog",
+    careers: "Carreiras",
+    contact: "Contato",
+    resources: "Recursos",
+    documentation: "Documentação",
+    helpCenter: "Central de ajuda",
+    apiDocs: "API Docs",
+    status: "Status",
+    legal: "Legal",
+    privacy: "Privacidade",
+    terms: "Termos",
+    security: "Segurança",
+    followUs: "Siga-nos",
+    allRightsReserved: "Todos os direitos reservados.",
+    protectingDigitalFuture: "Protegendo o futuro digital desde 2023"
   },
   
   // Common
@@ -207,6 +366,10 @@ export const pt = {
     terms: "Termos",
     privacy: "Privacidade",
     status: "Status",
-    needHelp: "Precisa de ajuda? Entre em contato com nossa equipe de suporte"
+    needHelp: "Precisa de ajuda? Entre em contato com nossa equipe de suporte",
+    yes: "Sim",
+    no: "Não",
+    included: "Incluído",
+    notIncluded: "Não incluído"
   }
 };

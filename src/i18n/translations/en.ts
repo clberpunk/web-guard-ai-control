@@ -57,7 +57,16 @@ export const en = {
     subtitle: "from unauthorized artificial intelligences",
     description: "The first platform that detects and controls AI access to your website. Protect your intellectual property and optimize resources.",
     startNow: "Start Now",
-    freeTrial: "Free Trial"
+    freeTrial: "Free Trial",
+    peopleHasRights: "People has rights,",
+    aiFollowRules: "AI follow rules.",
+    limitAiUsage: "Limit AI usage of your website by applying your terms and conditions.",
+    protectControlMonetize: "Protect, control and monetize your digital content against fraudulent AIs.",
+    seeDemo: "See Demo",
+    installation: "Installation",
+    pluginsNeeded: "Plugins needed",
+    daysGuarantee: "Days guarantee",
+    protectionLabel: "Enterprise AI Protection"
   },
   
   // Features
@@ -77,6 +86,20 @@ export const en = {
     noTechnicalImpactDesc: "Does not affect SEO, SEM, analytics or user experience. Only 5KB of code.",
     collaborativeManagement: "Collaborative Management",
     collaborativeManagementDesc: "Multiple users in the control panel with different access levels."
+  },
+  
+  // What We Detect
+  whatWeDetect: {
+    title: "What do we detect and protect?",
+    subtitle: "Complete AI threat identification",
+    knownAi: "Known AIs",
+    knownAiDesc: "GPT, Claude, Bard and over 50 identified models",
+    unknownBots: "Unknown Bots",
+    unknownBotsDesc: "Previously unidentified machine learning systems",
+    scrapers: "Web Scrapers",
+    scrapersDesc: "Automated content extraction tools",
+    crawlers: "Malicious Crawlers",
+    crawlersDesc: "Bots that ignore robots.txt and site policies"
   },
   
   // How It Works
@@ -107,6 +130,28 @@ export const en = {
     onlyHumansDesc: "Activate invisible filters to ensure that whoever enters... is real."
   },
   
+  // Dashboard
+  dashboard: {
+    title: "Intuitive",
+    subtitle: "Control Panel",
+    description: "Manage all AIs from a clear and powerful interface",
+    realTimeMonitoring: "Real-Time Monitoring",
+    realTimeMonitoringDesc: "Visualize live AI activity with detailed metrics",
+    aiManagement: "AI Management",
+    aiManagementDesc: "Configure specific policies for each type of AI",
+    detailedReports: "Detailed Reports",
+    detailedReportsDesc: "Export data and analyze behavior patterns",
+    controlPanel: "AI Control",
+    active: "Active",
+    aiDetected: "AIs Detected",
+    blocked: "Blocked",
+    allowed: "Allowed",
+    blocked_status: "Blocked",
+    allowed_status: "Allowed",
+    reviewing: "Reviewing",
+    limited: "Limited"
+  },
+  
   // Industry Sectors
   industrySectors: {
     title: "Adaptability to",
@@ -124,6 +169,22 @@ export const en = {
     pharmaBiotechDesc: "Safeguard medical research",
     publicSector: "Public Sector",
     publicSectorDesc: "Institutional protection for governments and NGOs"
+  },
+  
+  // Testimonials
+  testimonials: {
+    title: "What our",
+    subtitle: "clients say",
+    description: "Real success stories from companies that already protect their content",
+    testimonial1: "We reduced bot traffic by 75% without affecting our SEO. iAlert is an essential tool.",
+    testimonial1Author: "Maria Gonzalez",
+    testimonial1Role: "CTO, TechStartup",
+    testimonial2: "We protect our editorial content while allowing legitimate search engines to index us.",
+    testimonial2Author: "Carlos Ruiz",
+    testimonial2Role: "Digital Director, National Newspaper",
+    testimonial3: "Installation took 2 minutes. In one week we had already blocked over 500 scraping attempts.",
+    testimonial3Author: "Ana Morales",
+    testimonial3Role: "IT Manager, E-commerce"
   },
   
   // Enhanced Benefits
@@ -144,6 +205,38 @@ export const en = {
     solution6: "10 lines of code, no SDK, no cookies. Plug & play on any web or CMS.",
     problem7: "You want to control which AI can access",
     solution7: "White lists by AI, IP or User-Agent. You can also monetize access to certain models."
+  },
+  
+  // Pricing
+  pricing: {
+    title: "Prices that adapt",
+    subtitle: "to your business",
+    description: "Flexible plans for companies of all sizes",
+    starter: "Starter",
+    starterPrice: "Free",
+    starterDesc: "Perfect for small sites and testing",
+    starterFeature1: "Up to 10,000 visits/month",
+    starterFeature2: "Basic AI detection",
+    starterFeature3: "Control panel",
+    starterFeature4: "Email support",
+    professional: "Professional",
+    professionalPrice: "€29",
+    professionalPriceDesc: "/month",
+    professionalDesc: "Ideal for growing businesses",
+    professionalFeature1: "Up to 100,000 visits/month",
+    professionalFeature2: "Advanced detection + alerts",
+    professionalFeature3: "Granular configuration",
+    professionalFeature4: "Priority support",
+    enterprise: "Enterprise",
+    enterprisePrice: "Custom",
+    enterpriseDesc: "Tailored solutions for large organizations",
+    enterpriseFeature1: "Unlimited visits",
+    enterpriseFeature2: "Guaranteed SLA",
+    enterpriseFeature3: "Custom integration",
+    enterpriseFeature4: "24/7 support",
+    getStarted: "Get Started",
+    contactSales: "Contact sales",
+    mostPopular: "Most popular"
   },
   
   // Competitive Comparison
@@ -177,6 +270,43 @@ export const en = {
     certificationsTitle: "Certifications and Standards"
   },
   
+  // Contact
+  contact: {
+    title: "Need help?",
+    subtitle: "Contact us",
+    description: "Our team is here to help you protect your digital content",
+    name: "Name",
+    email: "Email",
+    company: "Company",
+    message: "Message",
+    send: "Send message",
+    businessHours: "Business hours",
+    businessHoursDesc: "Monday to Friday, 9:00 - 18:00 CET",
+    responseTime: "Response time",
+    responseTimeDesc: "< 24 hours on business days",
+    technicalSupport: "Technical support",
+    technicalSupportDesc: "Help with integration and configuration"
+  },
+  
+  // Technical Docs
+  technicalDocs: {
+    title: "Technical",
+    subtitle: "Documentation",
+    description: "Complete guides for developers and implementers",
+    quickStart: "Quick Start",
+    quickStartDesc: "Integrate iAlert in less than 5 minutes",
+    apiReference: "API Reference",
+    apiReferenceDesc: "Complete endpoint documentation",
+    integrationGuides: "Integration Guides",
+    integrationGuidesDesc: "WordPress, Shopify, React and more",
+    troubleshooting: "Troubleshooting",
+    troubleshootingDesc: "Common problems and their solutions",
+    examples: "Code Examples",
+    examplesDesc: "Real implementations for different platforms",
+    webhooks: "Webhooks",
+    webhooksDesc: "Receive real-time notifications"
+  },
+  
   // Global Stats
   globalStats: {
     title: "Protecting the digital future",
@@ -190,6 +320,35 @@ export const en = {
     trustingCompaniesDesc: "On our platform",
     guaranteedUptime: "Guaranteed Uptime",
     guaranteedUptimeDesc: "Service availability"
+  },
+  
+  // Footer
+  footer: {
+    product: "Product",
+    features: "Features",
+    howItWorks: "How it works",
+    pricing: "Pricing",
+    useCases: "Use cases",
+    industries: "Industries",
+    testimonials: "Testimonials",
+    comparison: "Comparison",
+    company: "Company",
+    about: "About",
+    blog: "Blog",
+    careers: "Careers",
+    contact: "Contact",
+    resources: "Resources",
+    documentation: "Documentation",
+    helpCenter: "Help center",
+    apiDocs: "API Docs",
+    status: "Status",
+    legal: "Legal",
+    privacy: "Privacy",
+    terms: "Terms",
+    security: "Security",
+    followUs: "Follow us",
+    allRightsReserved: "All rights reserved.",
+    protectingDigitalFuture: "Protecting the digital future since 2023"
   },
   
   // Common
@@ -207,6 +366,10 @@ export const en = {
     terms: "Terms",
     privacy: "Privacy",
     status: "Status",
-    needHelp: "Need help? Contact our support team"
+    needHelp: "Need help? Contact our support team",
+    yes: "Yes",
+    no: "No",
+    included: "Included",
+    notIncluded: "Not included"
   }
 };

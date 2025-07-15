@@ -2,9 +2,9 @@
 import MegaMenuNavigation from "@/components/MegaMenuNavigation";
 import TranslatedHero from "@/components/TranslatedHero";
 import TranslatedFeatures from "@/components/TranslatedFeatures";
-import WhatWeDetect from "@/components/WhatWeDetect";
-import SimplifiedHowItWorks from "@/components/SimplifiedHowItWorks";
-import ImmediateBenefits from "@/components/ImmediateBenefits";
+import TranslatedWhatWeDetect from "@/components/TranslatedWhatWeDetect";
+import TranslatedSimplifiedHowItWorks from "@/components/TranslatedSimplifiedHowItWorks";
+import TranslatedImmediateBenefits from "@/components/TranslatedImmediateBenefits";
 import Dashboard from "@/components/Dashboard";
 import IndustrySectors from "@/components/IndustrySectors";
 import Testimonials from "@/components/Testimonials";
@@ -32,10 +32,10 @@ const Index = () => {
         <TranslatedFeatures />
       </div>
       <div id="how-it-works">
-        <SimplifiedHowItWorks />
+        <TranslatedSimplifiedHowItWorks />
       </div>
       <div id="immediate-benefits">
-        <ImmediateBenefits />
+        <TranslatedImmediateBenefits />
       </div>
       <div id="dashboard">
         <Dashboard />
@@ -43,7 +43,7 @@ const Index = () => {
       
       {/* CASOS DE USO */}
       <div id="what-we-do">
-        <WhatWeDetect />
+        <TranslatedWhatWeDetect />
       </div>
       <div id="industry-sectors">
         <IndustrySectors />
